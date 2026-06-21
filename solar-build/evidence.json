@@ -1,0 +1,1037 @@
+[
+{
+"id": "A-001",
+"date": "9 September 2022",
+"topics": [
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Binance Research (Deleted Account) tells Nayiem that after further review Binance will not support the SXP mainnet swap and integration at this time, linking a feedback doc; Nayiem replies it's not the news he hoped for.",
+"quote": "After further review, Binance will not support the SXP mainnet swap & integration at this time."
+},
+{
+"id": "A-002",
+"date": "",
+"topics": [
+"mainnet-support",
+"ticker-ip",
+"card-fees",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Binance restates it won't support SXP mainnet/token swap; says Swipe (SXP) IP is owned by Binance so Solar Network being unaffiliated is OK but the token ticker can't be SXP. Nayiem asks if card processing fees will still use the SXP blockchain and notes Swipe site content was removed.",
+"quote": "the Swipe (SXP) IP is owned by Binance ... however the conflict is the token ticker cant be SXP."
+},
+{
+"id": "A-003",
+"date": "",
+"topics": [
+"mainnet-support",
+"independent-messaging",
+"card-fees",
+"ticker-ip",
+"supply",
+"treasury"
+],
+"who_raised": "unclear",
+"summary": "Binance clarifies 'no affiliation with Binance' refers to Solar Network being community-initiated. Nayiem notes message history with Joselito was deleted, asks if SXP token is still used for card fees, and recaps a Swipe blog: $10M buy (didn't happen), Swipechain rebrand to Solar, SXP on mainnet with IP issues.",
+"quote": "By \"no affiliation with Binance\" this is referring to Solar Network, as this was initiated by the community"
+},
+{
+"id": "A-004",
+"date": "",
+"topics": [
+"supply",
+"ticker-ip",
+"card-fees",
+"mainnet-support",
+"treasury",
+"timelock",
+"independent-messaging"
+],
+"who_raised": "solar",
+"summary": "Nayiem recaps the Swipe blog article: $10M SXP buy didn't happen, ticker IP issues, SXP holders to receive ERC20+BEP20 tokens (community must reduce back to 300M), Binance now holds majority of SXP while community devs got nothing, and crucial info being removed from Swipe site.",
+"quote": "SXP holders will receive both ERC20 and BEP20 tokens (issue created by Swipe, but the community has to solve it now to reduce it back to 300M)"
+},
+{
+"id": "A-005",
+"date": "27 September 2022",
+"topics": [
+"treasury",
+"mainnet-support",
+"agreement-liability"
+],
+"who_raised": "unclear",
+"summary": "Nayiem asks if Binance now owns the SXP Treasury wallet with +38M SXP (Etherscan link). Binance confirms that after the Swipe acquisition the SXP treasury wallet ownership was transferred to Binance and Joselito has no more involvement; Nayiem expresses anxiety and feels the community was misled.",
+"quote": "the ownership of the SXP treasury wallet was transferred over to Binance."
+},
+{
+"id": "A-006",
+"date": "28 September 2022",
+"topics": [
+"supply",
+"treasury",
+"card-fees",
+"mainnet-support"
+],
+"who_raised": "unclear",
+"summary": "Binance says it won't support SXP mainnet until criteria are met. Nayiem disputes the demand to fix supply back to 300M, noting the treasury (+120mln SXP) went to Binance leaving them ~170-180mln (almost half supply). Binance asks if Joselito minted/airdropped the extra tokens causing the inflated supply.",
+"quote": "Knowing that the treasury wallet was given to Binance + 120mln SXP from the acquisition, that leaves Binance with roughly 170-180mln SXP. Which is almost half of the supply."
+},
+{
+"id": "A-007",
+"date": "",
+"topics": [
+"supply",
+"mainnet-support",
+"agreement-liability"
+],
+"who_raised": "unclear",
+"summary": "Binance suggests using the SXP burn mechanism to gradually fix the inflated supply as a precondition; Nayiem says the burn protocol is live but hard to execute with few exchanges, shares a 2020 Swipe governance PDF, and argues it's unfair the community must fix Joselito's supply issue for mainnet integration. Binance insists the feedback-doc criteria must be fulfilled first.",
+"quote": "if Binance were to integrate/support SXP mainnet, the criterias listed out in the feedback doc are the requirements to be fulfilled before we can consider further"
+},
+{
+"id": "A-008",
+"date": "",
+"topics": [
+"mainnet-support",
+"card-fees",
+"supply"
+],
+"who_raised": "solar",
+"summary": "Telegram chat in Binance Research group. Solar (Nayiem) asks Binance to confirm old SXP utility (card processing fees) remains and that Binance will use SXP mainnet. Binance (Deleted Account) replies it will NOT use SXP Solar Network mainnet until officially integrated/supported on Binance, and only then can the discussion of using it for card processing fees be re-opened.",
+"quote": "No we will not be using the SXP (solar network mainnet), until it has been officially intergated/supported on Binance."
+},
+{
+"id": "A-009",
+"date": "",
+"topics": [
+"supply",
+"treasury",
+"mainnet-support",
+"card-fees",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) summarizes the dispute: Joselito/Swipe collected funds, sold to Binance, inflated supply; Binance now holds 170-180M (34%) of supply; community must reduce supply toward 300M leaving Binance ~60%; card-fee use-case only put 'in consideration'; founder deleted accounts and left leaders with 800k debt. Binance asks to clarify and Solar confirms the summary.",
+"quote": "Binance now has 170-180mln of the supply (34% of the total supply)"
+},
+{
+"id": "A-010",
+"date": "29 September 2022",
+"topics": [
+"mainnet-support",
+"supply",
+"agreement-liability",
+"listing-risk"
+],
+"who_raised": "binance",
+"summary": "Binance (Deleted Account) replies that report criteria are general guidelines for considering mainnet support/swap, not a guarantee once 'specific figures' are met. Says mainnet support can't be reconsidered until criteria achieved; lays out acquisition/supply-increase/rebrand/swap-request timeline; recommends revisiting in 3 months; argues SXP tokens were acquired as part of original Swipe project, not Solar.",
+"quote": "this cannot be reconsidered until the criteria's in the feedback have been achieved/improved."
+},
+{
+"id": "A-011",
+"date": "",
+"topics": [
+"treasury",
+"mainnet-support",
+"supply",
+"listing-risk",
+"card-fees"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) replies that the majority of SXP is in custody of Binance; asks Binance to confirm whether improving mainnet traction means users must withdraw SXP, swap to mainnet and trade on another exchange. Asks if current milestones are the only ones and whether there is any expectation to bring supply to 300M; accuses Binance of conveniently raising the inflated-supply issue only post-acquisition while listing the inflated BSC SXP.",
+"quote": "The majority of SXP is in custody of Binance."
+},
+{
+"id": "A-012",
+"date": "",
+"topics": [
+"card-fees",
+"supply",
+"mainnet-support",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Continuation of Solar's (Nayiem) message. Quotes the July 2020 Binance disclaimer about being committed to SXP/Swipe ecosystem growth; cites a BeInCrypto SwipeChain article; asks Binance to clarify why supply/card-fee issues weren't raised before final acquisition and whether Binance won't support/guide them on milestones.",
+"quote": "Binance has received a portion of SXP from the acquisition of Swipe."
+},
+{
+"id": "A-013",
+"date": "",
+"topics": [
+"card-fees",
+"supply",
+"mainnet-support",
+"treasury",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Continuation of Solar's (Nayiem) message. Asks why the card-processing-fee feature was removed/put in consideration after acquisition without SXP-holder approval; states there is no way the community can revert supply to its initial figure and won't do off-protocol burns (US regulatory compliance); says they kept the token swap gateway open for Binance's benefit as majority holder, and the community cannot allow a 3rd party to dictate project terms.",
+"quote": "we as a community can not allow a 3rd party dictate the terms of our project"
+},
+{
+"id": "A-014",
+"date": "3 October 2022",
+"topics": [
+"other",
+"supply",
+"mainnet-support"
+],
+"who_raised": "solar",
+"summary": "Binance claims SwipeChain was launched by the community (false per Solar); Solar (Nayiem) rebuts that SwipeChain was created by Swipe mid-acquisition, offers GitHub repo access/subpoena evidence and an April 2021 Swipe blog plus a forwarded Swipechain FAQ screenshot. Follows with friendly reminders (3 & 4 Oct) chasing @bresearch2 for an answer. Other: provenance/who-created-SwipeChain dispute and evidence offer.",
+"quote": "I want to clarify that the statement you gave about that Swipechain was launched by the community is false."
+},
+{
+"id": "A-015",
+"date": "5 October 2022",
+"topics": [
+"mainnet-support",
+"listing-risk"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) tells Binance Research that per Binance's Marketing team, SXP risks losing another trading pair (like the removed SXP/GBP pair) due to low volume as mainnet adoption shifts volume off Binance; asks how to speed mainnet adoption without losing more pairs. Binance (Deleted Account) replies pair removal is routine for low-volume pairs and recommends a market maker.",
+"quote": "we are currently at risk of losing another trading pair due to low volume. Just like the SXP/GBP pair that was removed earlier this year just a month after the mainnet launch."
+},
+{
+"id": "A-016",
+"date": "11 October 2022",
+"topics": [
+"mainnet-support",
+"listing-risk",
+"other"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) presses Binance Research for satisfactory answers and to be put in touch with the Binance Labs team, complaining about being ignored and unprofessional conduct. Footer notes transition to a 'Corpdev Group'. Other: complaint about communication/professionalism.",
+"quote": "I asked several important questions above and I don't like being ignored."
+},
+{
+"id": "A-017",
+"date": "18 March 2022",
+"topics": [
+"listing-risk",
+"other"
+],
+"who_raised": "binance",
+"summary": "Binance CorpDev (Matthew C) onboards Joselito L and Nayiem to a Telegram group, says he will manage the SXP-Binance relationship and wants to connect them with the US listing team about a potential Binance.US listing. Other: relationship management/intro, US listing discussion.",
+"quote": "I would like to connect you with our US listing team as they are interested in discussing on a potential listing on the Binance.US exchange."
+},
+{
+"id": "A-018",
+"date": "",
+"topics": [
+"mainnet-support",
+"other"
+],
+"who_raised": "unclear",
+"summary": "CorpDev chat where Joselito introduces Nayiem as SXP community lead and notes he's leaving the project; awaiting Nigel/Joshia and research team to finish DD for the SXP mainnet (called Solar). Matthew schedules an intro call about growth campaigns to promote the mainnet once approved internally. Other: transition of project leadership, scheduling.",
+"quote": "I am waiting for Nigel Joshia and research team to finish the DD for the mainnet of SXP which is called Solar."
+},
+{
+"id": "A-019",
+"date": "",
+"topics": [
+"mainnet-support",
+"independent-messaging",
+"supply",
+"treasury"
+],
+"who_raised": "solar",
+"summary": "Solar document responding to Binance's meeting requirements: (1) increase mainnet adoption (KuCoin/Gate.io support), (2) public security report, (3) draft announcement stating 'Solar has no connection with Binance'. Also requests info on BEP20 supply distribution, noting funds appear to have never left Binance's custody.",
+"quote": "Draft announcement - stating \u201cSolar has no connection with Binance\u201d."
+},
+{
+"id": "A-020",
+"date": "",
+"topics": [
+"independent-messaging",
+"treasury",
+"card-fees",
+"mainnet-support",
+"supply"
+],
+"who_raised": "solar",
+"summary": "Solar's 'Draft announcement' section objecting to publicly stating no ties between Solar Blockchain Foundation and Binance, citing assurances and SXP holder concerns: Binance to support SXP mainnet, burn SXP from Binance cards, use mainnet SXP for card processing fees, and use the Binance-owned treasury wallet to fund the SXP blockchain.",
+"quote": "The treasury wallet will be used to fund the SXP blockchain."
+},
+{
+"id": "A-021",
+"date": "",
+"topics": [
+"independent-messaging",
+"treasury",
+"mainnet-support"
+],
+"who_raised": "solar",
+"summary": "Continuation of Solar's draft-announcement analysis: notes the treasury wallet is currently owned by Binance and that stating Solar has no connection with Binance would be a difficult announcement given community concerns and the expectation Binance keeps its promises to support the SXP mainnet; cites Telegram/Discord screenshots as evidence.",
+"quote": "Stating that Solar has no connection with Binance would be a difficult announcement to make given the concerns raised by the community"
+},
+{
+"id": "A-022",
+"date": "4 October 2022",
+"topics": [
+"mainnet-support",
+"listing-risk"
+],
+"who_raised": "binance",
+"summary": "Binance (U-Chyung) says it is considering delisting SXP/BNB pairs and asks for positive developments; Nayiem replies that pair performance only improves if Binance does the mainnet swap, which Binance has chosen not to support.",
+"quote": "After an in-depth review of SXP/BNB trading pairs, we are considering delisting them."
+},
+{
+"id": "A-023",
+"date": "5 October 2022",
+"topics": [
+"mainnet-support",
+"listing-risk"
+],
+"who_raised": "solar",
+"summary": "Continuation of the delisting thread; Nayiem chases for advice, notes difficulty maintaining volume while pushed to speed up mainnet adoption elsewhere; U-Chyung apologizes for delay and says he shared the response and cannot give advice yet.",
+"quote": "It is difficult for us to maintain the volume on certain when we are asked to speed up mainnet adoption on other exchanges."
+},
+{
+"id": "A-024",
+"date": "",
+"topics": [
+"mainnet-support",
+"listing-risk",
+"other"
+],
+"who_raised": "solar",
+"summary": "Nayiem recounts that the mainnet-support report was shared then mainnet request was denied; argues Solar(SXP) is 99.999% the same as ARK codebase already listed without audits, and complains ARK gets listed without audit while Solar faces hurdles. Other: code/audit comparison, BR2/BR6 contacts.",
+"quote": "He also told me already that the request for mainnet was denied."
+},
+{
+"id": "A-025",
+"date": "",
+"topics": [
+"independent-messaging",
+"other"
+],
+"who_raised": "binance",
+"summary": "U-Chyung frames community concerns as needing insights to address, warns against bad PR; discusses whether the people raising concerns are in Solar's community/investors. Nayiem says they're big bag holders from the ICO. Other: investor/community identity.",
+"quote": "Definitely wouldn't want bad PR for both of us."
+},
+{
+"id": "A-026",
+"date": "",
+"topics": [
+"independent-messaging",
+"card-fees",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Nayiem hesitates to issue a 'we have no ties' announcement, worried it conflicts with prior public Binance commitments (card fees, development funding); arranges another meeting to clarify the no-connection announcement before publishing.",
+"quote": "Simply stating, \"we have no ties,\" is an easy announcement to write; however, the concern is what that statement conveys with regard to prior commitments made publicly by Binance, e.g., card fees, development funding, etc."
+},
+{
+"id": "A-027",
+"date": "",
+"topics": [
+"independent-messaging",
+"card-fees",
+"treasury",
+"agreement-liability"
+],
+"who_raised": "binance",
+"summary": "U-Chyung asks Solar to draft the independent/community-driven announcement; Nayiem wants it to state the announcement is unrelated to SXP card fees and treasury wallet, fearing he'd carry the blame for undelivered Swipe/Binance promises pre-mainnet.",
+"quote": "Can we include in the draft that the announcement is unrelated to the SXP card processing fees, treasury wallet and everything else that has been communicated by Swipe/Binance?"
+},
+{
+"id": "A-028",
+"date": "7 December 2022",
+"topics": [
+"independent-messaging",
+"card-fees",
+"listing-risk",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Solar (\u0141\u018e\u018eP) probes Binance's real aim, fearing a public 'no ties' statement would be used to void promises that SXP would be used for processing fees and to fund development, and that Binance could still refuse listing after trading away those commitments.",
+"quote": "In that light, we would be trading what Binance had promised for a listing. Further, if such a statement were made, couldn't Binance just not proceed with our listing anyway?"
+},
+{
+"id": "A-029",
+"date": "30 December 2022",
+"topics": [
+"independent-messaging",
+"mainnet-support"
+],
+"who_raised": "unclear",
+"summary": "Binance (U-Chyung) presses Solar for an ETA on the draft announcement, saying once received they can 'work on it together'; Solar (Simon) says discussions ongoing and links the public security repo. Later Nayiem asks when mainnet listing will follow the draft; Binance replies the announcement is under internal review and delayed by the holidays.",
+"quote": "It was said the last time that mainnet listing would follow up very quickly after sharing the draft announcement."
+},
+{
+"id": "A-030",
+"date": "5 January 2023",
+"topics": [
+"agreement-liability",
+"card-fees",
+"treasury",
+"mainnet-support",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Binance (U-Chyung) says it is unable to provide any signed guarantees on card processing fees or the treasury wallet. Nayiem objects that Solar is an initiative from Swipe, that editing the draft per Binance's recommendations was never a requirement, and that Solar met all criteria for mainnet migration; Binance pushes the stakeholder-recommended edits.",
+"quote": "we are unable to provide any signed guarantees on card processing fees and the treasury wallet."
+},
+{
+"id": "A-031",
+"date": "13 January 2023",
+"topics": [
+"treasury",
+"card-fees",
+"mainnet-support"
+],
+"who_raised": "solar",
+"summary": "Across 13-16 Jan, Nayiem repeatedly chases Binance for updates and asks to organise a meeting with stakeholders/leaders about the treasury wallet and card processing fees. Binance (U-Chyung) declines ('I'm afraid not') and keeps deflecting that the announcement is 'the next step forward.'",
+"quote": "to discuss about the treasury wallet and card processing fees."
+},
+{
+"id": "A-032",
+"date": "17 January 2023",
+"topics": [
+"treasury",
+"listing-risk",
+"mainnet-support",
+"supply",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Nayiem refuses to compromise on the treasury wallet, arguing Binance promised to support SXP development by giving the treasury fund to developers. Binance (U-Chyung) then raises possible delisting of the SXP/EUR pair. Solar (Simon) replies that pair isn't mainnet SXP and that Binance is the primary holder of ERC-20 SXP responsible for its volume, offering to discuss listing if Binance supports migrating/swapping to mainnet SXP as an independent project.",
+"quote": "After an in-depth review of SXP/EUR trading pair, we are considering delisting them."
+},
+{
+"id": "A-033",
+"date": "31 January 2023",
+"topics": [
+"treasury",
+"card-fees",
+"mainnet-support",
+"agreement-liability",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Nayiem offers to drop card processing fees and consider the draft announcement on conditions, wanting to proceed on mainnet listing and treasury funds. Binance (U-Chyung) says it cannot discuss the treasury funds because 'the funds are Binance assets,' and that it can only further evaluate mainnet support after Solar posts the suggested announcement, with no guarantees. Simon presses that the announcement was supposed to be the final requirement.",
+"quote": "I'm afraid we are unable to discuss the treasury funds as the funds are Binance assets."
+},
+{
+"id": "A-034",
+"date": "2 February 2023",
+"topics": [
+"independent-messaging",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Binance (U-Chyung) clarifies 'making the announcement' means posting in Solar's community channels (Solar.org/Telegram/Discord) and that mainnet support still depends on evaluating mainnet stats. Solar (Simon) then posts screenshots of the Telegram and Discord announcements stating SXP/Solar 'has fully transitioned to become an independent community-driven project,' confirming the announcement was made.",
+"quote": "Binance has requested that we share the following statement in our community channels"
+},
+{
+"id": "A-035",
+"date": "6 February 2023",
+"topics": [
+"independent-messaging",
+"mainnet-support",
+"ticker-ip"
+],
+"who_raised": "binance",
+"summary": "After Solar asks if anything remains before mainnet integration, Binance (U-Chyung) instructs them not to use the Binance name in future announcements and to send any blog article for Binance review before publishing. YX/UC clarify Solar should not state 'Binance has requested us to publish' and instead hyperlink to Binance's own 'acquire outstanding shares in Swipe' announcement; a draft 'We are Solar' independent statement is shown.",
+"quote": "Kindly do not use the Binance name in future announcements before discussing with us."
+},
+{
+"id": "A-036",
+"date": "7 February 2023",
+"topics": [
+"mainnet-support",
+"independent-messaging",
+"listing-risk",
+"agreement-liability"
+],
+"who_raised": "binance",
+"summary": "Solar (Nayiem) confirms Binance said mainnet listing would follow quickly if Solar publishes a Binance-requested announcement. Binance (U-Chyung/YX) says they will only review the mainnet listing request once mainnet stats improve; Nayiem notes the swap portal closes 28 March regardless of stats.",
+"quote": "Hi @nayiem - to clarify, once your mainnet stats have improved we can review request again."
+},
+{
+"id": "A-037",
+"date": "12 February 2023",
+"topics": [
+"independent-messaging",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Solar asks Binance to confirm it should publish the requested article on its blog with the hyperlink; Binance (U-Chyung) asks for a draft before publishing. Nayiem later submits the Medium draft titled 'Solar - a decentralised community-driven project'.",
+"quote": "Yes. Thank you for checking in. Please send us a draft before publishing."
+},
+{
+"id": "A-038",
+"date": "13 February 2023",
+"topics": [
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Binance (YX) directs how/where the 'community-driven' article must be posted, asking Solar to publish it so it appears when users click the blog and redirects to the CoinMarketCap community article. Nayiem agrees and offers to publish within an hour of approval.",
+"quote": "yes can u publish it such that when someone clicks on blog - they will see it?"
+},
+{
+"id": "A-039",
+"date": "13 February 2023",
+"topics": [
+"independent-messaging",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Binance (YX) instructs Solar to also attach the CMC article link in the website 'About' section. Nayiem confirms steps (publish on CMC, copy link into About section) and provides the CMC community article URL; proposed hyperlink text references 'the transition to Solar mainnet'.",
+"quote": "\"Click here to learn more about the transition to Solar mainnet\""
+},
+{
+"id": "A-040",
+"date": "13 February 2023",
+"topics": [
+"independent-messaging",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Continuation of 13 Feb thread: Binance (YX) reviews Solar's website Foundation/About page screenshots and asks Solar to attach the article link in the About section. Nayiem confirms the workflow of publishing on CMC and linking it into the website.",
+"quote": "can u also attach link of that page in \"About section\"?"
+},
+{
+"id": "A-041",
+"date": "13 February 2023",
+"topics": [
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Binance (YX) reviews and approves how the 'transition to Solar mainnet' link is displayed on the Solar Foundation/About page, saying 'This is ok' and 'actually this is better', confirming Binance's editorial control over Solar's public messaging.",
+"quote": "actually this is better - lets do it this way. by the way, this is not up yet right?"
+},
+{
+"id": "A-042",
+"date": "15 February 2023",
+"topics": [
+"other"
+],
+"who_raised": "binance",
+"summary": "Binance approves the messaging ('for the time being this is ok') then announces an account-manager handover: U-Chyung transitions out of Binance effective Feb 17 and introduces Jess W (@Jessbinance) as the new Solar Account Manager; pleasantries exchanged.",
+"quote": "please meet @Jessbinance who would be taking over as your Account Manager moving forward"
+},
+{
+"id": "A-043",
+"date": "22-26 February 2023",
+"topics": [
+"mainnet-support",
+"listing-risk",
+"timelock"
+],
+"who_raised": "binance",
+"summary": "Solar (Nayiem) reports all major exchanges now support SXP mainnet, leaving Binance as the only one on BSC. Binance (Jess W) replies stressing liquidity/market-making, warns poor liquidity can lead to trading pairs being delisted, and sends a questionnaire form. Solar keeps chasing for updates.",
+"quote": "high price slippage, negative user feedback, big transaction cost or even trading pairs being delisted."
+},
+{
+"id": "A-044",
+"date": "26-27 February 2023",
+"topics": [
+"mainnet-support",
+"supply",
+"other"
+],
+"who_raised": "binance",
+"summary": "Solar presses that swap portal closes in under a month. Binance (Jess W) says they are coordinating internally and Ryan will follow up. Ryan takes over, restarts the review, sends another form, and requests SXP mainnet stats (on-chain transfers, holders, validators, delegates, tokens burned, dapps).",
+"quote": "I will be taking over from here, and has got internal approval to re-start the review of your reuqest."
+},
+{
+"id": "A-045",
+"date": "",
+"topics": [
+"mainnet-support",
+"supply",
+"agreement-liability",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Ryan says a migration is needed and Binance will swap user holdings token-for-token with Solar's team, will not interact with external portals/contracts, and asks the public swap-portal closing date not apply to Binance. Solar refuses ('code is law'), says the decentralised portal cannot be overridden and Binance is just another holder, restating Solar is not affiliated with Binance.",
+"quote": "Binance is just another holder, like everyone else, especially since we had to make it clear now that Solar is not affiliated with Binance in any way."
+},
+{
+"id": "A-046",
+"date": "",
+"topics": [
+"mainnet-support",
+"agreement-liability",
+"treasury"
+],
+"who_raised": "binance",
+"summary": "Ryan explains Binance requires a 1mm BUSD security deposit from the project for mainnet integration, returned over 12-24 months if no trigger events breached. Solar calls it a blocker, saying the treasury funds meant for such expenses were taken away and the project was handed to the community with no funding from the legacy team.",
+"quote": "So for mainnet integration, we take 1mm BUSD as security deposits from the project team."
+},
+{
+"id": "A-047",
+"date": "",
+"topics": [
+"treasury",
+"agreement-liability",
+"mainnet-support"
+],
+"who_raised": "solar",
+"summary": "Solar says protocol-funded expenses pale next to the millions in SXP treasury that Binance controls. Ryan asks the team's decision on the security deposit. Solar asks why the deposit can't come from the treasury wallet, noting Binance publicly committed to use those funds for SXP development; Ryan says he will check.",
+"quote": "But that pales in comparison to the multiple millions of dollars worth of SXP in the SXP treasury that Binance controls."
+},
+{
+"id": "A-048",
+"date": "27-28 February 2023",
+"topics": [
+"mainnet-support",
+"agreement-liability",
+"independent-messaging",
+"treasury",
+"timelock"
+],
+"who_raised": "solar",
+"summary": "Solar agrees to swap legacy tokens on Binance's behalf but says it can only propose a new portal closing date with a written agreement or public announcement that Binance supports mainnet. Cites former Binance staff (Joselito, UC) who promised listing/exchange support. Ryan sets a call and proposes the security deposit be taken from the treasury wallet declared held by Binance.",
+"quote": "Suggest to take security deposits out from treasury wallet declared to be held by Binance."
+},
+{
+"id": "A-049",
+"date": "",
+"topics": [
+"mainnet-support",
+"agreement-liability",
+"card-fees",
+"listing-risk",
+"timelock",
+"supply"
+],
+"who_raised": "solar",
+"summary": "Solar summarizes agreed terms: Binance supports mainnet, waives deposit fee, announces support within 60 days, mainnet runs alongside legacy while Binance collects legacy SXP, legacy SXP delisted after swap, swap closes 30 June, no more stats reviews, all in a legal agreement signed by Binance and Solar Blockchain Foundation. Ryan walks back, saying stats are still needed for records.",
+"quote": "All of this will be written in a legal agreement, signed by Binance and the Solar Blockchain Foundation."
+},
+{
+"id": "A-050",
+"date": "2023-03-06",
+"topics": [
+"mainnet-support",
+"agreement-liability",
+"listing-risk",
+"independent-messaging"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) confirms a new agreement is being finalized after a 'waive'; Ryan (Binance) says internal teams aligned and revising the draft. Solar asks how to answer users about keeping SXP on Binance, noting that telling users they can keep SXP reveals Binance will support mainnet, while telling them to withdraw implies Binance won't, causing selling. Ryan suggests messaging users that SXP works closely with remaining exchanges, stay tuned.",
+"quote": "Telling users that they can keep their SXP on Binance reveals that Binance will support mainnet."
+},
+{
+"id": "A-051",
+"date": "2023-03-16",
+"topics": [
+"agreement-liability",
+"treasury",
+"mainnet-support"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) reviews Binance's revised draft agreement and questions removed clauses: the reference to Binance owning Swipe, the swap closing date, 'Coin' changed to 'Token', and the reference that Binance sends the token and Solar swaps for Binance. Ryan (Binance) says no specific reasons, it's just the standard template preamble, and asks Solar to add back any parts they find inappropriate for legal review.",
+"quote": "is there any reason why the following has been removed? - Reference to Binance owning Swipe."
+},
+{
+"id": "A-052",
+"date": "2023-03-20",
+"topics": [
+"agreement-liability",
+"treasury",
+"mainnet-support",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Solar (Nayiem) signs the agreement; Ryan says once both parties sign they will prepare the announcement. Ryan then says Binance's internal team raised the mainnet-integration security deposit from $1mm BUSD to $2mm BUSD. Solar objects, saying they can't provide a deposit because Binance already holds the funds allocated to the treasury fund. YX (Binance) replies the funds don't belong to SXP/Solar and asks them to check the acquisition announcement or Joselito.",
+"quote": "the internal team has raised the security deposits from $1mm BUSD to $2mm BUSD for the mainnet integration."
+},
+{
+"id": "A-053",
+"date": "2023-03-23",
+"topics": [
+"treasury",
+"agreement-liability",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "YX (Binance) insists the funds Solar referenced do not belong to SXP/Solar and asks whether Solar can put up any deposit amount. Solar (Nayiem) quotes Binance's own acquisition announcement ('committed to helping the long-term, sustainable growth of both SXP and the Swipe ecosystem') to argue the funds were meant for this, and reiterates they cannot fund a deposit since all SXP for such purposes is in Binance's control. YX says they'll discuss internally; Ryan later says no change, will proceed as discussed.",
+"quote": "all the SXP meant for such things are in Binance's control."
+},
+{
+"id": "A-054",
+"date": "2023-03-24",
+"topics": [
+"agreement-liability",
+"treasury",
+"mainnet-support",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Solar (Nayiem) asks if no security deposit is required; Ryan (Binance) asks if the team is 'ok to pay again' since Solar said they can't pay, and references a (now-broken) CoinMarketCap article link. Solar reiterates they won't pay the deposit. Ryan says they are working on the announcement draft. Solar notes the contract is now signed by both sides and asks whether the mainnet integration is proceeding as discussed.",
+"quote": "But I noticed that the contract was signed from both sides now. Are we proceeding with the mainnet integration as discussed?"
+},
+{
+"id": "A-055",
+"date": "",
+"topics": [
+"supply",
+"mainnet-support",
+"treasury",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Ryan (Binance) questions why BEP2 SXP isn't mentioned in Solar's blog post about the swap portal closing (deadline 30 June 2023). Solar (Nayiem) says it was never informed about BEP2 logistics by Swipe and was told Binance controls the entire BEP2 supply; the swap bridge only covers ERC20/BEP20 to mainnet, not BEP2. Ryan asks how Solar plans to swap BEP2 SXP (send tokens or burn-and-match). Solar asks if BEP2 conversion is controlled by Binance Token Hub and whether the explorer is the official site.",
+"quote": "was told that Binance controls the entire BEP2 supply."
+},
+{
+"id": "A-056",
+"date": "",
+"topics": [
+"supply",
+"mainnet-support",
+"treasury",
+"independent-messaging"
+],
+"who_raised": "binance",
+"summary": "Continuation of BEP2 swap discussion. Solar (Nayiem) explains they can only swap tokens with a valid ERC20/BEP20 swap transaction. Ryan (Binance) says Binance sends legacy tokens directly to the project team initiating the new version, will check with his team. Solar reiterates Binance would send tokens and Solar swaps for new mainnet SXP, but only for ERC20/BEP20, and that BEP2-to-BEP20 is controlled by Binance Token Hub. Ryan asks Solar to also include BEP2 SXP in the blog post since after 30 June there's no way to swap.",
+"quote": "The swap from BEP2 to BEP20 is controlled by Binance Token Hub."
+},
+{
+"id": "A-057",
+"date": "27 March 2023",
+"topics": [
+"supply",
+"mainnet-support",
+"treasury"
+],
+"who_raised": "solar",
+"summary": "Nayiem (Solar) details BEP2 SXP supply (70,845,434), executes a swap via Binance Token Hub, estimates Binance holds ~59.89M SXP BEP2, and proposes conditions to swap Binance's BEP2 holdings to BEP20/mainnet (close BEP2 withdrawals, swap Binance's tokens asap, guide users).",
+"quote": "I'm willing to swap the BEP2 tokens to BEP20 (or directly to mainnet) for you."
+},
+{
+"id": "A-058",
+"date": "4 April 2023",
+"topics": [
+"supply",
+"treasury",
+"other"
+],
+"who_raised": "binance",
+"summary": "Binance's Jess W asks Solar to deposit SXP into Simple Earn due to high SXP Loan demand and low inventory. Nayiem says he holds no BEP20/ERC20 SXP and most is already held by Binance. Binance Ops then proposes arranging a BEP2 to BEP20 swap. Topic 'other' = Simple Earn / SXP Loan inventory request.",
+"quote": "Now we don't have enough SXP inventory, would you like to deposit some SXP to Simple Earn plz?"
+},
+{
+"id": "A-059",
+"date": "",
+"topics": [
+"supply",
+"treasury",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Binance Ops states they hold about 69.9M SXP and coordinates the swap of their holdings, exchanging BEP2 receipt and BEP20 (0x53d2e...) addresses with Nayiem. Binance asks to swap for ERC20 instead; Nayiem says only protocol-level BEP swap via Binance Token Hub is possible, so they agree to stick with BEP20.",
+"quote": "currently we hold about 69.9M SXP"
+},
+{
+"id": "A-060",
+"date": "",
+"topics": [
+"treasury",
+"timelock",
+"mainnet-support",
+"supply"
+],
+"who_raised": "binance",
+"summary": "Binance's Ryan flags 31,800,000 SXP locked in a contract that Binance's internal team raised, asking how to handle it before the 6/30 final migration. Nayiem explains protocol won't allow funds to leave the swap wallet without a legacy-network tx. Terence confirms swap not yet completed; Ryan worries about portal closing.",
+"quote": "How shall we deal with those locked SXP? As the 6/30 final migration time close by, we need to sort out those funds asap."
+},
+{
+"id": "A-061",
+"date": "",
+"topics": [
+"timelock",
+"treasury",
+"agreement-liability",
+"listing-risk",
+"supply"
+],
+"who_raised": "binance",
+"summary": "Binance (Ryan) says management has big concern about the locked 31.8M SXP and insists a way must be found to swap it or it's a huge loss they 'will not be ok with.' Terence states 600k is released monthly, taking 4.5 years to fully receive 31.8M. Nayiem notes the topic was non-negotiable earlier and technically funds can't move without a legacy-network tx.",
+"quote": "In the end, we will have to find a way to swap those SXP stuck in the contract. Otherwise this is a huge loss, which we will not be ok with for letting this happen."
+},
+{
+"id": "A-062",
+"date": "16 May 2023",
+"topics": [
+"treasury",
+"listing-risk",
+"timelock",
+"mainnet-support",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Ryan (Binance) says the post-listing team is now Solar's sole contact, demands the issue be escalated to high priority and a tech solution found. Nayiem replies that any discussion of the treasury contract risked the leader team walking away from Solar and delisting, so they stopped asking; the ERC20 treasury is a CertiK-audited timelock that cannot be released.",
+"quote": "any discussion regarding the treasury contract in any form could have the leader team walk away from Solar."
+},
+{
+"id": "A-063",
+"date": "16 May 2023",
+"topics": [
+"treasury",
+"listing-risk",
+"timelock",
+"mainnet-support",
+"agreement-liability"
+],
+"who_raised": "solar",
+"summary": "Nayiem (Solar) reiterates that treasury concerns were raised early and ignored, that the ERC20 timelock contract cannot be released by anyone, and that any solution must come from the mainnet side without violating the protocol. He notes they stopped pushing to avoid delisting risk. Binance asks if it's exactly 30 days / how many hold the keys; Ryan acknowledges concerns received.",
+"quote": "From that point we stopped asking about it, since we did not want to risk any delisting."
+},
+{
+"id": "A-064",
+"date": "",
+"topics": [
+"mainnet-support",
+"timelock",
+"supply",
+"treasury",
+"agreement-liability"
+],
+"who_raised": "unclear",
+"summary": "Binance (Ryan) asks if there's a way to 1:1 swap legacy ERC20 SXP to mainnet and whether ERC20 tokens become useless after lock expires. Nayiem (Solar) confirms the timelock cannot be bypassed and stresses any solution must be ethical/non-shady. Solar later proposes coins could be released on mainnet but only under Solar supervision and on the same ERC20 release schedule.",
+"quote": "Code is law and I don't want to do something shady or bypass certain agreements"
+},
+{
+"id": "A-065",
+"date": "",
+"topics": [
+"mainnet-support",
+"treasury",
+"supply",
+"timelock",
+"agreement-liability"
+],
+"who_raised": "unclear",
+"summary": "Binance (Ryan) asks why the token must be burned and whether the monthly 600k unlock flow (ERC20 unlocks 600k/month) can be replicated on mainnet so they auto-claim. Solar (sL33P) explains burning removes circulation; says Binance handling the legacy contract is impossible unless they hand over ERC20 treasury keys, and proposes Binance burning legacy tokens while the Solar Foundation sends matching mainnet SXP as the lowest-trust path.",
+"quote": "Unless you want to turn over the keys to the ERC-20 treasury, there's technically no way for us to handle the legacy contract or tokens."
+},
+{
+"id": "A-066",
+"date": "",
+"topics": [
+"supply",
+"treasury",
+"timelock",
+"agreement-liability",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Binance (Ryan) proposes Solar transfer 31.8M mainnet SXP to Binance's own account, Binance locks it and releases 600k/month to Solar, on mutual trust with no legal agreement, offering Solar-funded marketing in return. Solar (sL33P) rejects it, warning of doubling treasury holdings, inflating supply, and inviting fraud/theft claims; offers to honor 1:1 swaps before 6/30.",
+"quote": "Without any technical guarantees or barriers preventing legacy tokens from re-entering circulation, there is a significant risk of doubling Binance's treasury holdings and inflating the total supply."
+},
+{
+"id": "A-067",
+"date": "",
+"topics": [
+"supply",
+"treasury",
+"agreement-liability",
+"mainnet-support",
+"timelock"
+],
+"who_raised": "binance",
+"summary": "Binance (Ryan) presses on technical guarantees, proposes locking 31.8M mainnet SXP on Binance's own account, promises not to touch the ERC20 contract, and asks why no open market for legacy tokens is a worry; asks ETA for mainnet contract functionality. Solar (sL33P) replies it's about what CAN be guaranteed, noting legacy BNB markets still exist as a counterexample.",
+"quote": "it's not about what someone promises or whether what you're proposing feels safe enough, it's about what can be guaranteed."
+},
+{
+"id": "A-068",
+"date": "2023/6/30",
+"topics": [
+"supply",
+"treasury",
+"agreement-liability",
+"timelock",
+"mainnet-support",
+"independent-messaging"
+],
+"who_raised": "solar",
+"summary": "Solar (sL33P) lays out the core conflict: Binance wants the full treasury, Solar wants total supply reduced; depositing 31.8M increases supply and nothing stops Binance reselling. Cites contractual obligation to honor 1:1 swap until 2023/6/30, offers to match unlocked funds 1:1 every 30 days only if first burned, and anticipates mainnet contract functionality (escrow) by year-end.",
+"quote": "We have a contractual obligation to honor a 1:1 swap up until 2023/6/30."
+},
+{
+"id": "A-069",
+"date": "",
+"topics": [
+"treasury",
+"supply",
+"timelock",
+"agreement-liability",
+"mainnet-support",
+"other"
+],
+"who_raised": "binance",
+"summary": "Binance (Ryan) expresses surprise at Solar's lack of trust, asks whether a legal agreement on the Binance-account lock is considerable, says depending on Solar to send tokens for 4 years feels unsafe, and objects to Solar using Binance's wallet weight to vote for node operators (commission). Says Binance has no interest in holding/selling ERC20 SXP, will burn if required, and argues legacy SXP will be worthless. Other: node-operator voting/commission via Binance's wallet weight.",
+"quote": "Your team is requesting to use our wallet \"weight\" to vote for node operators, we are aware there could be some commission generated."
+},
+{
+"id": "A-070",
+"date": "19 May 2023",
+"topics": [
+"mainnet-support",
+"ticker-ip",
+"treasury",
+"supply",
+"agreement-liability",
+"independent-messaging"
+],
+"who_raised": "solar",
+"summary": "Solar (sL33P) states they spent over a year trying to get mainnet SXP listed, emphasizing 'We are not Swipe' and weren't listed until last week. Argues trust in Binance doesn't prevent employees getting things wrong; reiterates Binance wants the treasury while Solar wants legacy burned and users on mainnet; clarifies ERC20 funds technically cannot vote on Solar mainnet; asks whether Binance won't do Solar-funded marketing unless funds are deposited.",
+"quote": "We are not Swipe and we were not listed on Binance until last week."
+},
+{
+"id": "A-071",
+"date": "21 May 2023",
+"topics": [
+"treasury",
+"mainnet-support",
+"supply",
+"agreement-liability",
+"timelock"
+],
+"who_raised": "solar",
+"summary": "Solar research note / conclusion to Binance (Ryan): refuses to deposit 31.8M mainnet SXP on Binance because treasury funds are protocol-secured and lose technical guarantees in 3rd-party custody; discusses legacy ERC-20 SXP DEX liquidity (never 1:1), wishes legacy funds burned/swapped 1:1 to reduce supply, and offers to honor proposal later or build an on-chain escrow/mirror of the locked treasury contract.",
+"quote": "We will not be depositing 31.8M mainnet SXP on Binance."
+},
+{
+"id": "A-072",
+"date": "21 May 2023",
+"topics": [
+"mainnet-support",
+"listing-risk",
+"ticker-ip",
+"mainnet-support"
+],
+"who_raised": "binance",
+"summary": "Binance (Ryan) frames Solar not as a new listing but as a Swipe mainnet upgrade/rebranding, stating that if the project does not upgrade before 6/30 Binance will have to delist; proposes verbal call times. Solar (sleepdefic1t) asks what 'upgrade before 6/30' means and whether they must pay 31.8M SXP.",
+"quote": "if we do not upgrade before 6/30, we will have to delist the project."
+},
+{
+"id": "A-073",
+"date": "",
+"topics": [
+"listing-risk",
+"mainnet-support",
+"supply",
+"ticker-ip"
+],
+"who_raised": "unclear",
+"summary": "Continued chat: Solar (sleepdefic1t) presses on the delisting threat, noting all requirements came from the 'new listing requirements' / post-listing team, and asks whether the project will be delisted if 'what' is not upgraded by 6/30. Binance (Ryan) reiterates Swipe-to-Solar is a rebranding and mainnet upgrade, not a new listing.",
+"quote": "if we do not upgrade before 6/30, we will have to delist the project."
+},
+{
+"id": "A-074",
+"date": "",
+"topics": [
+"mainnet-support",
+"listing-risk",
+"ticker-ip"
+],
+"who_raised": "binance",
+"summary": "Binance (Ryan) explains it supported the mainnet upgrade because all utilities swap from legacy Swipe to mainnet Solar after 6/30 and it did not want to delist Swipe; scheduling for a Tuesday 1130 SGT call, attendees Nayiem (nayiem@solar.org) and Simon (simon@solar.org); YX to join.",
+"quote": "For us Swipe is a project that has been listed for years. Solar is a rebranding and mainnet upgrade from Swipe, not a new listing for us."
+},
+{
+"id": "A-075",
+"date": "",
+"topics": [
+"other"
+],
+"who_raised": "solar",
+"summary": "Solar (Nayiem) alerts Binance that the Swipe Facebook account has been compromised and is scamming mainnet users; asks Ryan to contact Jonathan Lim. Binance reps and a Deleted Account ask for background/details; an embedded screenshot shows a fake Swipe x JustAnEgg ($EGG) giveaway scam post. Topic: security/social-account compromise/scam.",
+"quote": "The Swipe Facebook account has been compromised and they are now scamming users on mainnet."
+},
+{
+"id": "A-076",
+"date": "29 May 2023",
+"topics": [
+"card-fees",
+"other"
+],
+"who_raised": "solar",
+"summary": "Continuing the Swipe Facebook scam thread: Binance (Deleted Account) asks who manages the FB account (noting Swipe is part of Binance portfolio), whether they can reset the password, and when it happened. Nayiem (Solar) replies they never had access; credentials were transferred from Swipe to Binance in early '22; names Jonathan Jek Sheng Lim of Binance Card; scam started with the Egg giveaway post.",
+"quote": "The account credentials were transferred from Swipe to Binance in early '22."
+},
+{
+"id": "A-077",
+"date": "",
+"topics": [
+"treasury",
+"mainnet-support",
+"timelock",
+"agreement-liability"
+],
+"who_raised": "unclear",
+"summary": "Solar (sleepdefic1t) explains technical refusal of Binance's swap/bridge proposal: swap logic removed in Core 5.0, won't operate an exploitable bridge for 4 years, HTLC inherited from ARK is insecure/disabled and only supports expiration not a lock time; says they've raised treasury-fund concerns for 18 months. Binance (Ryan) replies the funds should belong to Binance and they're trying to safely get them back.",
+"quote": "The fact is those funds should belong to Binance, and we are trying to figure out a way to safely get those funds back."
+},
+{
+"id": "A-078",
+"date": "",
+"topics": [
+"mainnet-support",
+"treasury",
+"supply",
+"listing-risk",
+"agreement-liability"
+],
+"who_raised": "unclear",
+"summary": "Telegram chat (SXP/Binance CorpDev). Solar (el33t) pushes its proposal as the only technically viable course and agrees delisting benefits neither party; Ryan (Binance) reports security found mainnet SXP already minted in a wallet and freely transferable to external addresses; Solar disputes that funds are 'freely sent without restrictions'.",
+"quote": "Quick update \u2013 we found the mainnet SXP has already been minted in a wallet address, and confirmed with our security that this can be freely sent to an external address without any restrictions."
+},
+{
+"id": "A-079",
+"date": "1 June 2023",
+"topics": [
+"treasury",
+"mainnet-support",
+"supply"
+],
+"who_raised": "solar",
+"summary": "Solar (el33t) explains swap-wallet controls to Ryan: Solar Blockchain Foundation acts as a trust without authority to send freely; community/block producers monitor and auto-tweet outgoing txns; swap-wallet keys split among multiple parties; Core rejects outbound transfers without a matching ETH/BSC tx. Ryan asks whether 'the block' is a moral/compliance block rather than a technical one.",
+"quote": "The swap wallet keys are split between multiple parties (undisclosed due to security reasons), who are obligated only to allow transfers under strict conditions."
+},
+{
+"id": "A-080",
+"date": "",
+"topics": [
+"listing-risk",
+"supply",
+"timelock",
+"ticker-ip"
+],
+"who_raised": "unclear",
+"summary": "Solar asks BPost Listing Ops to detail the tokenomics changes that triggered Solar SXP's risk warning. BPost cites a supply increase from 300m to 600m plus ~7% annual inflation as the trigger. Nayiem (Solar) responds the supply increase happened Sept 2020 during the Binance/Swipe acquisition, the swap was a 1:1 legacy-to-mainnet, supply was never manipulated by Solar, and asks Binance to reconsider the risk label.",
+"quote": "There was an increase in token supply from 300m to 600m and also inflation rate of 7% annually when we support the token swap"
+},
+{
+"id": "A-081",
+"date": "2 October 2024",
+"topics": [
+"listing-risk",
+"supply",
+"treasury"
+],
+"who_raised": "unclear",
+"summary": "BPost Listing AM6 says the risk-warning decision is final; Nayiem thanks them. Solar (el33t) pushes back, noting BSC supply was discussed back to Nov 17, 2021, that Ryan acknowledged Binance's SXP holdings were moved to mainnet without affecting total supply and BEP-20 tokens were burned, and that the >300M supply discrepancy predated Solar's mainnet; embedded screenshots show a 2021 SXP(BSC)->SXP(ETH) swap request and a 2023 note that treasury ERC20 SXP already exists on mainnet (no additional minting).",
+"quote": "Thanks for the input, unfortunately the decision is final."
+},
+{
+"id": "A-082",
+"date": "3 October 2024",
+"topics": [
+"listing-risk",
+"supply",
+"timelock",
+"independent-messaging"
+],
+"who_raised": "unclear",
+"summary": "BPost Listing AM6 reiterates supply rose 300m to 600m plus ~7% annual inflation and says they must inform the community of the increase, framed as info not a negative. Solar (el33t) replies welcoming Binance taking the lead on transparency, then asks: whether a >30-month-old supply increase is still relevant, whether Binance has a specific inflation threshold for risk banners, and notes upcoming products will raise burn rate and lower inflation.",
+"quote": "We would need to inform the community the increase in token supply and future increase because of the inflation."
+}
+]

@@ -1,0 +1,19 @@
+# Solar (SXP) — The Solar Foundation
+
+> Public transparency record for the Solar (SXP) blockchain. Covers the full Swipe->Solar history, the Binance Token Swap Agreement (published in full), why the Core 5.0 upgrade was blocked, an 82-exhibit evidence pack of communications, and the network's current maintenance-only status. The project's lead resigned in late 2025; the network runs in maintenance-only mode; SXP was delisted by Binance on 2026-04-01.
+
+## Key pages
+- [History & timeline](https://solar.org/history): sourced chronology 2018-2026
+- [Core 5.0 blockers](https://solar.org/core5): why the next-gen upgrade could not ship
+- [Token Swap Agreement](https://solar.org/agreement): the Binance agreement, full text
+- [Community report](https://solar.org/report): the record + 82 screenshot exhibits
+- [Evidence index](https://solar.org/evidence): all 82 exhibits classified by topic (mainnet support raised in 68 of 82; treasury in 43; card fees in 18)
+- [FAQ](https://solar.org/faq): Core 5.0, the agreement, the supply, Solar Card, Monolythium
+- [Governance](https://solar.org/governance): SXP-GOV-2026-01 vote record
+- [Status](https://solar.org/status): live network status
+- [Exchanges](https://solar.org/exchanges): where SXP still trades
+- [Archive](https://solar.org/archive): blog post snapshots
+
+## Notes
+- Facts established by the published agreement are cited by clause; other points are labelled the Foundation's stated position and are not independently confirmed.
+- Contact: hello@solar.org

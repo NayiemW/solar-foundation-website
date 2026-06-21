@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar — The Solar Foundation</title>
+<meta name="description" content="The Solar Foundation&#x27;s transparent record of the Solar (SXP) dPoS blockchain — history, current status, governance, and how to take part.">
+<meta property="og:title" content="Solar — The Solar Foundation">
+<meta property="og:description" content="The Solar Foundation&#x27;s transparent record of the Solar (SXP) dPoS blockchain — history, current status, governance, and how to take part.">
+<link rel="icon" href="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#0a0a0d;}
+  ::selection{background:rgba(255,150,90,.3);color:#fff;}
+  @keyframes solarPulse{0%,100%{opacity:.5;transform:scale(1);}50%{opacity:1;transform:scale(1.3);}}
+  @keyframes glowDrift{0%,100%{transform:translateY(-50%) scale(1);}50%{transform:translateY(-50%) scale(1.06);}}
+  @keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;scroll-behavior:auto;}}
+  a{color:inherit;}
+  @media (max-width:860px){
+    .nav-bar{padding:13px 20px !important;}
+    .nav-links{gap:15px !important;font-size:13px !important;flex:1;min-width:0;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;justify-content:flex-start;}
+    .nav-cta{display:none !important;}
+    .pagewrap{padding-left:20px !important;padding-right:20px !important;}
+    .sec{padding-top:58px !important;}
+    .hero-grid{grid-template-columns:1fr !important;gap:28px !important;min-height:0 !important;padding:18px 0 36px !important;}
+    .hero-h1{font-size:33px !important;}
+    .h2sec{font-size:26px !important;}
+    .g6{grid-template-columns:1fr 1fr !important;}
+    .g6>div{border-right:none !important;border-bottom:1px solid #1c1b21;}
+    .g3,.ghero-what,.gstatus,.g2guid{grid-template-columns:1fr !important;}
+    .ginv,.gfoot{grid-template-columns:1fr 1fr !important;}
+    .xhead{display:none !important;}
+    .xrow{grid-template-columns:1fr !important;gap:6px !important;align-items:start !important;padding:18px 22px !important;}
+  }
+  @media (max-width:480px){
+    .ginv,.gfoot,.g6{grid-template-columns:1fr !important;}
+    .hero-h1{font-size:29px !important;}
+  }
+</style>
+
+<!--seo-->
+<link rel="canonical" href="https://solar.org/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0a0a0d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Solar Foundation">
+<meta property="og:url" content="https://solar.org/">
+<meta property="og:image" content="https://solar.org/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Solar — The Solar Foundation">
+<meta name="twitter:description" content="The Solar Foundation&#x27;s transparent record of the Solar (SXP) dPoS blockchain — history, current status, governance, and how to take part.">
+<meta name="twitter:image" content="https://solar.org/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://solar.org/#org","name":"The Solar Foundation","url":"https://solar.org/","logo":"https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png","sameAs":["https://github.com/Solar-network","https://blog.solar.org","https://solarscan.com"]},{"@type":"WebPage","@id":"https://solar.org/#page","url":"https://solar.org/","name":"Solar \u2014 The Solar Foundation","description":"The Solar Foundation's transparent record of the Solar (SXP) dPoS blockchain \u2014 history, current status, governance, and how to take part.","isPartOf":{"@id":"https://solar.org/#website"},"publisher":{"@id":"https://solar.org/#org"},"inLanguage":"en"},{"@type":"WebSite","@id":"https://solar.org/#website","url":"https://solar.org/","name":"Solar (SXP) \u2014 The Solar Foundation","publisher":{"@id":"https://solar.org/#org"},"inLanguage":"en"}]}</script>
+
+<style>/*navcss*/
+.snav{position:sticky;top:0;z-index:100;background:rgba(10,10,13,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1c1b21;}
+.snav-in{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 28px;}
+.snav-logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex:none;}
+.snav-menu{display:flex;align-items:center;gap:4px;}
+.snav-menu>a,.snav-ddbtn{font-family:'Manrope',sans-serif;font-size:14px;color:#a9a8b0;text-decoration:none;background:none;border:none;cursor:pointer;padding:8px 12px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;line-height:1;}
+.snav-menu>a:hover,.snav-ddbtn:hover{color:#f4f3f6;background:rgba(255,255,255,.05);}
+.snav-dd{position:relative;}
+.snav-ddmenu{position:absolute;top:calc(100% + 8px);left:0;min-width:248px;background:#0e0d12;border:1px solid #232228;border-radius:12px;padding:7px;box-shadow:0 24px 60px rgba(0,0,0,.55);display:none;flex-direction:column;gap:1px;z-index:130;}
+.snav-dd:hover .snav-ddmenu,.snav-dd.open .snav-ddmenu{display:flex;}
+.snav-ddmenu a{font-family:'Manrope',sans-serif;font-size:13.5px;color:#bcbbc4;text-decoration:none;padding:10px 12px;border-radius:8px;white-space:nowrap;display:flex;flex-direction:column;gap:2px;}
+.snav-ddmenu a:hover{background:rgba(255,255,255,.05);color:#f4f3f6;}
+.snav-ddmenu a small{color:#5f5e66;font-size:11.5px;}
+.snav-cta{flex:none;font-family:'Manrope',sans-serif;font-size:14px;color:#f4f3f6;text-decoration:none;border:1px solid #2a2930;border-radius:8px;padding:8px 15px;}
+.snav-cta:hover{border-color:#3a3942;background:rgba(255,255,255,.04);}
+.snav-tg{display:none;background:none;border:1px solid #2a2930;border-radius:8px;color:#f4f3f6;font-size:17px;line-height:1;padding:7px 12px;cursor:pointer;}
+.snav-caret{font-size:9px;opacity:.65;}
+@media (max-width:880px){
+  .snav-tg{display:block;}
+  .snav-cta{display:none;}
+  .snav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#0b0a0e;border-bottom:1px solid #1c1b21;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 18px;max-height:82vh;overflow:auto;}
+  .snav.open .snav-menu{display:flex;}
+  .snav-menu>a{padding:13px 8px;border-bottom:1px solid #15141a;}
+  .snav-ddbtn{width:100%;justify-content:space-between;padding:14px 8px 6px;color:#f6a623;font-size:12px;letter-spacing:.06em;text-transform:uppercase;}
+  .snav-ddmenu{position:static;display:flex;box-shadow:none;border:none;background:transparent;padding:0 0 8px 6px;min-width:0;}
+  .snav-caret{display:none;}
+}
+</style>
+</head>
+<body>
+<div data-screen-label="Homepage" style="background:#0a0a0d;font-family:'Manrope',sans-serif;color:#f4f3f6;min-height:100vh;overflow-x:hidden;">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="snav">
+  <div class="snav-in">
+    <a class="snav-logo" href="/"><img src="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png" alt="Solar" style="width:26px;height:26px;border-radius:6px;" /><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">Solar</span><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5f5e66;border:1px solid #1c1b21;border-radius:4px;padding:2px 7px;letter-spacing:.06em;">FOUNDATION</span></a>
+    <button class="snav-tg" aria-label="Toggle menu">&#9776;</button>
+    <nav class="snav-menu">
+      <a href="/status">Status</a>
+      <div class="snav-dd">
+        <button class="snav-ddbtn" type="button">Transparency <span class="snav-caret">&#9660;</span></button>
+        <div class="snav-ddmenu">
+          <a href="/history">History &amp; timeline<small>Full sourced chronology, 2018&ndash;2026</small></a>
+          <a href="/core5">Core 5.0 &mdash; the blockers<small>Why the upgrade could never ship</small></a>
+          <a href="/agreement">Token Swap Agreement<small>The Binance agreement, full text</small></a>
+          <a href="/report">Community report<small>The record + 82 screenshot exhibits</small></a>
+          <a href="/evidence">Evidence index<small>All 82 exhibits, tallied by topic</small></a>
+          <a href="/archive">Blog archive<small>Snapshots of official posts</small></a>
+        </div>
+      </div>
+      <div class="snav-dd">
+        <button class="snav-ddbtn" type="button">Network <span class="snav-caret">&#9660;</span></button>
+        <div class="snav-ddmenu">
+          <a href="/governance">Governance<small>SXP-GOV-2026-01 vote record</small></a>
+          <a href="/exchanges">Where SXP trades<small>Remaining venues + guidance</small></a>
+          <a href="https://solarscan.com" target="_blank" rel="noopener">Block explorer &#8599;<small>Solarscan</small></a>
+          <a href="https://github.com/Solar-network" target="_blank" rel="noopener">GitHub &#8599;<small>Open-source core</small></a>
+          <a href="mailto:hello@solar.org">Contact<small>hello@solar.org</small></a>
+        </div>
+      </div>
+      <a href="/faq">FAQ</a>
+    </nav>
+    <a class="snav-cta" href="https://solarscan.com" target="_blank" rel="noopener">Open Explorer</a>
+  </div>
+</header>
+
+  <div id="top"></div>
+
+  <!-- ===================== HERO (Direction B) ===================== -->
+  <div class="pagewrap" style="max-width:1240px;margin:0 auto;padding:0 32px;">
+    <div class="hero-grid" style="display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;min-height:620px;padding:40px 0;">
+      <!-- left -->
+      <div>
+        <a href="#status" style="display:inline-flex;align-items:center;gap:8px;background:rgba(246,166,35,.08);border:1px solid rgba(246,166,35,.28);border-radius:999px;padding:7px 15px;text-decoration:none;margin-bottom:26px;">
+          <span style="width:7px;height:7px;border-radius:50%;background:#f6a623;display:inline-block;animation:solarPulse 2.4s ease-in-out infinite;"></span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#f6a623;letter-spacing:.03em;">Maintenance-only</span>
+        </a>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.22em;color:#8b8a93;text-transform:uppercase;margin-bottom:20px;">The Solar Foundation</div>
+        <h1 class="hero-h1" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:54px;line-height:1.04;letter-spacing:-.025em;color:#f4f3f6;margin:0;">Solar — an open-source <span style="background:linear-gradient(135deg,#ffc24a,#ff6a5e);-webkit-background-clip:text;background-clip:text;color:transparent;">dPoS blockchain.</span></h1>
+        <p style="font-size:17.5px;line-height:1.6;color:#a9a8b0;margin:24px 0 0;max-width:500px;">Native token SXP. 8-second blocks, 53 block producers, fully on-chain. This site is the Foundation's transparent record of the network — its history, its present status, and how to take part.</p>
+        <div style="display:flex;gap:14px;margin-top:36px;">
+          <a href="https://solarscan.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#ffc24a,#ff6a5e);color:#1a0d05;font-weight:600;font-size:15px;text-decoration:none;padding:14px 24px;border-radius:8px;" data-h="filter:brightness(1.06);">Open Explorer →</a>
+          <a href="#history" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f4f3f6;font-weight:500;font-size:15px;text-decoration:none;padding:14px 24px;border-radius:8px;border:1px solid #2a2930;" data-h="border-color:#3a3942;background:rgba(255,255,255,.03);">Read the record</a>
+        </div>
+      </div>
+      <!-- right: live console -->
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+        <div style="position:absolute;right:-30px;top:50%;width:520px;height:520px;background:radial-gradient(circle, rgba(255,140,90,.13), rgba(255,140,90,0) 65%);filter:blur(10px);animation:glowDrift 14s ease-in-out infinite;pointer-events:none;"></div>
+        <div style="position:relative;width:100%;max-width:440px;background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.5);">
+          <div style="display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1c1b21;padding-bottom:16px;margin-bottom:18px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8b8a93;letter-spacing:.05em;">mainnet · live</span>
+            <span data-live="chainstate" style="display:inline-flex;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#46d39a;"><span data-live="chaindot" style="width:7px;height:7px;border-radius:50%;background:#46d39a;display:inline-block;animation:solarPulse 1.8s ease-in-out infinite;"></span>advancing</span>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#5f5e66;letter-spacing:.1em;margin-bottom:6px;">LAST BLOCK HEIGHT</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:36px;color:#f4f3f6;font-weight:600;letter-spacing:-.01em;"><span data-live="height">16,561,603</span><span style="color:#f6a623;animation:blink 1.1s step-end infinite;">_</span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px;">
+            <div style="background:#0a0a0d;border:1px solid #1c1b21;border-radius:9px;padding:14px;"><div style="font-family:'JetBrains Mono',monospace;font-size:21px;color:#f4f3f6;font-weight:600;">8s</div><div style="font-size:11px;color:#5f5e66;margin-top:3px;">block time</div></div>
+            <div style="background:#0a0a0d;border:1px solid #1c1b21;border-radius:9px;padding:14px;"><div style="font-family:'JetBrains Mono',monospace;font-size:21px;color:#f4f3f6;font-weight:600;">53</div><div style="font-size:11px;color:#5f5e66;margin-top:3px;">producers</div></div>
+            <div style="background:#0a0a0d;border:1px solid #1c1b21;border-radius:9px;padding:14px;"><div style="font-family:'JetBrains Mono',monospace;font-size:21px;color:#f4f3f6;font-weight:600;">~<span data-live="supply">684</span>M</div><div style="font-size:11px;color:#5f5e66;margin-top:3px;">SXP supply</div></div>
+            <div style="background:#0a0a0d;border:1px solid #1c1b21;border-radius:9px;padding:14px;"><div style="font-family:'JetBrains Mono',monospace;font-size:21px;color:#f4f3f6;font-weight:600;">90%</div><div style="font-size:11px;color:#5f5e66;margin-top:3px;">fee burn</div></div>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#46485a;text-align:right;margin-top:16px;letter-spacing:.05em;">from solarscan · genesis 2022-03-28</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== STATS BAND ===================== -->
+  <div style="border-top:1px solid #1c1b21;border-bottom:1px solid #1c1b21;background:#0c0b10;">
+    <div class="pagewrap" style="max-width:1240px;margin:0 auto;padding:0 32px;">
+      <div class="g6" style="display:grid;grid-template-columns:repeat(6,1fr);">
+        <div style="padding:26px 22px;border-right:1px solid #1c1b21;"><div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#f4f3f6;font-weight:600;">8s</div><div style="font-size:11.5px;color:#5f5e66;letter-spacing:.06em;margin-top:6px;line-height:1.4;">BLOCK TIME</div></div>
+        <div style="padding:26px 22px;border-right:1px solid #1c1b21;"><div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#f4f3f6;font-weight:600;">53</div><div style="font-size:11.5px;color:#5f5e66;letter-spacing:.06em;margin-top:6px;line-height:1.4;">ACTIVE PRODUCERS</div></div>
+        <div style="padding:26px 22px;border-right:1px solid #1c1b21;"><div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#f4f3f6;font-weight:600;">6.75–13.25</div><div style="font-size:11.5px;color:#5f5e66;letter-spacing:.06em;margin-top:6px;line-height:1.4;">BLOCK REWARD · SXP</div></div>
+        <div style="padding:26px 22px;border-right:1px solid #1c1b21;"><div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#f4f3f6;font-weight:600;">~673–684M</div><div style="font-size:11.5px;color:#5f5e66;letter-spacing:.06em;margin-top:6px;line-height:1.4;">CIRCULATING SUPPLY</div></div>
+        <div style="padding:26px 22px;border-right:1px solid #1c1b21;"><div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#f4f3f6;font-weight:600;">90%</div><div style="font-size:11.5px;color:#5f5e66;letter-spacing:.06em;margin-top:6px;line-height:1.4;">FEE BURN · PARTIAL</div></div>
+        <div style="padding:26px 22px;"><div style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#f4f3f6;font-weight:600;">2022-03-28</div><div style="font-size:11.5px;color:#5f5e66;letter-spacing:.06em;margin-top:6px;line-height:1.4;">MAINNET GENESIS</div></div>
+      </div>
+      <div style="padding:12px 22px 16px;font-size:12px;color:#5f5e66;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #15141a;flex-wrap:wrap;gap:6px;">
+        <span>Live metrics from Solarscan; some figures depend on current validator participation.</span>
+        <span style="font-family:'JetBrains Mono',monospace;color:#46485a;">Last reviewed 2026-06-20</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== WHAT IS SOLAR ===================== -->
+  <div class="pagewrap sec" style="max-width:1240px;margin:0 auto;padding:90px 32px 20px;">
+    <div class="ghero-what" style="display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#f6a623;text-transform:uppercase;margin-bottom:18px;">What is Solar</div>
+        <h2 class="h2sec" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;line-height:1.12;letter-spacing:-.02em;color:#f4f3f6;margin:0;">An independent, open-source Layer-1.</h2>
+      </div>
+      <div>
+        <p style="font-size:17px;line-height:1.7;color:#bcbbc4;margin:0;">Solar is an independent, open-source Layer-1 blockchain secured by Delegated Proof-of-Stake: 53 elected block producers, 8-second blocks, BIP340 Schnorr signatures, and a partial fee burn. Its native token is SXP. Solar's mainnet launched on <span style="color:#f4f3f6;">28 March 2022</span> as a community-driven fork of ARK Core, and the SXP token migrated to it 1:1 in 2023. The network is open-source on GitHub and explorable on Solarscan.</p>
+      </div>
+    </div>
+    <div class="g3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px;">
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:28px;" data-h="border-color:#2a2930;">
+        <div style="width:38px;height:38px;border-radius:10px;background:rgba(246,166,35,.1);border:1px solid rgba(246,166,35,.25);display:flex;align-items:center;justify-content:center;margin-bottom:18px;"><div style="width:14px;height:14px;border-radius:3px;background:linear-gradient(135deg,#ffc24a,#ff6a5e);"></div></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#f4f3f6;margin-bottom:8px;">Fast & low-fee</div>
+        <p style="font-size:14.5px;line-height:1.6;color:#8b8a93;margin:0;">8-second blocks, dynamic fees, and a deflationary partial burn of network fees.</p>
+      </div>
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:28px;" data-h="border-color:#2a2930;">
+        <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.25);display:flex;align-items:center;justify-content:center;margin-bottom:18px;"><div style="width:14px;height:14px;border-radius:50%;border:3px solid #46d39a;"></div></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#f4f3f6;margin-bottom:8px;">Delegated PoS</div>
+        <p style="font-size:14.5px;line-height:1.6;color:#8b8a93;margin:0;">53 elected block producers secure the chain, with on-chain voting by token holders.</p>
+      </div>
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:28px;" data-h="border-color:#2a2930;">
+        <div style="width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid #2a2930;display:flex;align-items:center;justify-content:center;margin-bottom:18px;"><div style="width:14px;height:14px;border:2px solid #a9a8b0;transform:rotate(45deg);"></div></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#f4f3f6;margin-bottom:8px;">Open & verifiable</div>
+        <p style="font-size:14.5px;line-height:1.6;color:#8b8a93;margin:0;">Open-source core, a public block explorer, and on-chain governance — all auditable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== STATUS MODULE ===================== -->
+  <div id="status" class="pagewrap sec" style="max-width:1240px;margin:0 auto;padding:90px 32px 20px;scroll-margin-top:80px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#f6a623;text-transform:uppercase;margin-bottom:18px;">Current status</div>
+    <h2 class="h2sec" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;line-height:1.1;letter-spacing:-.02em;color:#f4f3f6;margin:0 0 28px;">Where Solar stands today.</h2>
+    <div class="gstatus" style="display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:start;">
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:16px;padding:32px;">
+        <p style="font-size:16.5px;line-height:1.72;color:#bcbbc4;margin:0 0 18px;"><span style="color:#f4f3f6;font-weight:600;">Solar is in a maintenance-only state.</span> There is no active development team and no further protocol updates are planned. The network continues to operate through its independent block producers, and the Foundation maintains seed infrastructure and this record on a best-effort basis so the chain remains reachable for existing holders and integrations.</p>
+        <p style="font-size:16.5px;line-height:1.72;color:#bcbbc4;margin:0;">Following the resignation of the project's lead developer in November 2025 (<a href="https://blog.solar.org/resignation-statement-nayiem-w/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">statement</a>), the Foundation published a full <a href="https://blog.solar.org/solar-project-status-update/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Project Status Update</a> (January 2026) and held an <a href="https://proposals.solar.org/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">open governance vote</a> on an optional path forward. After that vote did not reach quorum (<a href="governance.html" style="color:#cbb27e;text-decoration:underline;">outcome</a>), no successor development team came forward. Solar remains open for any credible organization to steward — see <a href="#get-involved" style="color:#cbb27e;text-decoration:underline;">Get involved</a>.</p>
+        <a href="status.html" style="display:inline-flex;align-items:center;gap:7px;margin-top:24px;font-size:14px;color:#f6a623;text-decoration:none;font-weight:500;" data-h="gap:11px;">View full status →</a>
+      </div>
+      <!-- live status row -->
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:16px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#5f5e66;letter-spacing:.08em;">CHAIN STATUS</span>
+          <span data-live="chainstate" style="display:inline-flex;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#46d39a;"><span data-live="chaindot" style="width:7px;height:7px;border-radius:50%;background:#46d39a;display:inline-block;animation:solarPulse 1.8s ease-in-out infinite;"></span>advancing</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid #15141a;"><span style="font-size:13px;color:#8b8a93;">Last block height</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#f4f3f6;"><span data-live="height">16,561,603</span></span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid #15141a;"><span style="font-size:13px;color:#8b8a93;">Last block</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#f4f3f6;">~<span data-live="ago">15</span>s ago</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid #15141a;"><span style="font-size:13px;color:#8b8a93;">Active producers</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#f4f3f6;">53 / 53</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:13px 0;"><span style="font-size:13px;color:#8b8a93;">Core release</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#f4f3f6;">4.3.1</span></div>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#46485a;margin-top:16px;text-align:right;">from solarscan · best-effort</div>
+      </div>
+    </div>
+    <!-- honesty callouts -->
+    <div class="g3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px;">
+      <div style="background:#0c0b10;border:1px solid #1c1b21;border-radius:12px;padding:22px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#f76a6a;letter-spacing:.06em;margin-bottom:10px;">NO ACTIVE DEVELOPMENT</div>
+        <p style="font-size:14px;line-height:1.55;color:#8b8a93;margin:0;">Last protocol release: Core 4.3.1. No further releases planned.</p>
+      </div>
+      <div style="background:#0c0b10;border:1px solid #1c1b21;border-radius:12px;padding:22px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#f6a623;letter-spacing:.06em;margin-bottom:10px;">EXCHANGE SUPPORT REDUCED</div>
+        <p style="font-size:14px;line-height:1.55;color:#8b8a93;margin:0;">Major listings closed in 2025–2026. See the history record.</p>
+      </div>
+      <div style="background:#0c0b10;border:1px solid #1c1b21;border-radius:12px;padding:22px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46d39a;letter-spacing:.06em;margin-bottom:10px;">SEED NODES MAINTAINED</div>
+        <p style="font-size:14px;line-height:1.55;color:#8b8a93;margin:0;">Foundation keeps seed infrastructure online — best-effort, no SLA.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HISTORY ACCORDION ===================== -->
+  <div id="history" class="pagewrap sec" style="max-width:1240px;margin:0 auto;padding:90px 32px 20px;scroll-margin-top:80px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#f6a623;text-transform:uppercase;margin-bottom:18px;">History & transparency</div>
+    <h2 class="h2sec" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;line-height:1.1;letter-spacing:-.02em;color:#f4f3f6;margin:0 0 20px;">A sourced, public record.</h2>
+    <p style="font-size:16px;line-height:1.7;color:#9a99a2;max-width:780px;margin:0 0 24px;">The Solar Foundation believes the network's history should be public and verifiable. Below is a sourced timeline — from Swipe's founding through the Binance acquisition, the 2023 rebrand to Solar, and the 2025–2026 wind-down. Verifiable facts link to primary sources. A small number of points reflect statements the Foundation has placed on record about internal events, labelled accordingly. They are consistent with the public record but have not yet been independently confirmed, and the parties involved have not responded publicly.</p>
+    <!-- legend -->
+    <div style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:26px;">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#8b8a93;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 8px;letter-spacing:.04em;">VERIFIED</span> links to a primary source</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#8b8a93;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#f6a623;background:rgba(246,166,35,.1);border:1px solid rgba(246,166,35,.3);border-radius:5px;padding:3px 8px;letter-spacing:.04em;">REPORTED</span> third-party reporting</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#8b8a93;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8b8a93;background:rgba(255,255,255,.03);border:1px solid #2a2930;border-radius:5px;padding:3px 8px;letter-spacing:.04em;">FOUNDATION STATEMENT</span> the Foundation's statement, not yet independently confirmed</span>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;">
+
+      <!-- Panel 1 -->
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;overflow:hidden;">
+        <div data-acc="1" style="display:flex;align-items:center;justify-content:space-between;padding:22px 26px;cursor:pointer;user-select:none;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#5f5e66;">01</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#f4f3f6;">Swipe origins & the SXP token</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5f5e66;">2018–2019</span>
+          </div>
+          <span style="font-size:20px;color:#8b8a93;transform:rotate(0deg);transition:transform .25s;">+</span>
+        </div>
+        <div style="display:none;padding:0 26px 8px;">
+          <div style="border-top:1px solid #15141a;padding-top:8px;">
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">Swipe — a multi-asset crypto wallet and Visa debit-card platform — was founded in 2018. <a href="https://coinmarketcap.com/alexandria/people/joselito-lizarondo" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">CMC ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">SXP launched as an ERC-20 on Ethereum (contract <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#a9a8b0;">0x8ce9…b6a9</span>), original max supply 300,000,000, deflationary toward a 100M floor. <a href="https://etherscan.io/token/0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Etherscan ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">Token sale (Aug 2019): $0.20 / SXP, $12M raised (private 6.52% + public 13.48%). <a href="https://www.binance.com/en/research/projects/swipe" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Binance Research ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">Genesis allocation: Founder 20% · Team 20% · Reserve 40% · Public 13.48% · Private 6.52%.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;overflow:hidden;">
+        <div data-acc="2" style="display:flex;align-items:center;justify-content:space-between;padding:22px 26px;cursor:pointer;user-select:none;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#5f5e66;">02</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#f4f3f6;">Binance acquires Swipe</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5f5e66;">2020–2021</span>
+          </div>
+          <span style="font-size:20px;color:#8b8a93;transform:rotate(0deg);transition:transform .25s;">+</span>
+        </div>
+        <div style="display:none;padding:0 26px 8px;">
+          <div style="border-top:1px solid #15141a;padding-top:8px;">
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2020-07-07 — Binance announced its acquisition of Swipe and listed SXP. <a href="https://www.binance.com/en-IN/support/announcement/binance-announces-acquisition-of-swipe-and-lists-swipe-sxp-4ef2d3389f4143c2986c685a88501939" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Binance ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2020-10-22 — Binance opened BEP2 & BEP20 deposits/withdrawals for SXP. <a href="https://www.binance.com/en/support/announcement/binance-opens-bep2-bep20-deposits-and-withdrawals-for-inj-pax-sxp-usdc-9b2dc1d114ee462aaedebf73041f5807" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Binance ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#f6a623;background:rgba(246,166,35,.08);border:1px solid rgba(246,166,35,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">REPORTED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">The founder burned his entire 60M founder allocation (10M in 2020; the remaining 50M in April 2021, ~17.5% of supply, reported &gt;$200M). <a href="https://en.ethereumworldnews.com/swipe-founder-and-ceo-burns-his-sxp-token-allocation-worth-over-200m/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Ethereum World News ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">SXP reached its all-time high (~$5.79–$5.86) on 2021-05-03. <a href="https://www.coingecko.com/en/coins/solar-2" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">CoinGecko ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2021-12-30 — Binance announced it would acquire the remaining shares of Swipe (full ownership; Swipe as its card-program manager). <a href="https://www.binance.com/en/support/announcement/binance-to-acquire-outstanding-shares-in-swipe-efa96d9a856f4620b2fa6e372edbe290" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Binance ↗</a></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3 -->
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;overflow:hidden;">
+        <div data-acc="3" style="display:flex;align-items:center;justify-content:space-between;padding:22px 26px;cursor:pointer;user-select:none;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#5f5e66;">03</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#f4f3f6;">Solar: the independent Layer-1</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5f5e66;">2022–2023</span>
+          </div>
+          <span style="font-size:20px;color:#8b8a93;transform:rotate(0deg);transition:transform .25s;">+</span>
+        </div>
+        <div style="display:none;padding:0 26px 8px;">
+          <div style="border-top:1px solid #15141a;padding-top:8px;">
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">The Solar Blockchain Foundation was established (~Dec 2021) to steward SXP as an independent, community-driven, DAO-governed network. <a href="https://cryptorank.io/news/feed/ebcaf-solar-project-resignation-nayiem-willems" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">CryptoRank ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2022-03-28 — Solar mainnet went live (dPoS fork of ARK Core: 53 producers, 8s blocks). <a href="https://blog.solar.org/get-ready-for-mainnet/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Solar ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2023-03-28 — Binance announced support for the SXP mainnet swap & rebrand to Solar, migrating all ERC20/BEP2/BEP20 SXP 1:1. <a href="https://www.binance.com/en/support/announcement/binance-will-support-the-swipe-sxp-mainnet-swap-rebranding-plan-to-solar-sxp-73bded28e8dc48e081c5e577a5436c55" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Binance ↗</a> <a href="https://coinmarketcap.com/community/articles/63ea0fe5c9f0fe137e905394/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">CMC ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2023-05-15 — the swap executed; the Solar swap portal closed 2023-07-05. <a href="https://blog.solar.org/swap-portal-officially-closed/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Solar ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">Core 4.3.1 (2023-07-20) is the current stable mainnet. <a href="https://github.com/Solar-network/core/releases" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">GitHub ↗</a></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 4 -->
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;overflow:hidden;">
+        <div data-acc="4" style="display:flex;align-items:center;justify-content:space-between;padding:22px 26px;cursor:pointer;user-select:none;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#5f5e66;">04</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#f4f3f6;">Products & Core 5.0</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5f5e66;">2024–2025</span>
+          </div>
+          <span style="font-size:20px;color:#8b8a93;transform:rotate(0deg);transition:transform .25s;">+</span>
+        </div>
+        <div style="display:none;padding:0 26px 8px;">
+          <div style="border-top:1px solid #15141a;padding-top:8px;">
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">The team expanded into consumer products: Solar Card, tymt (game launcher), District 53, BrighterVPN, under "Solar Enterprises" (2024-05-30). <a href="https://blog.solar.org/introducing-solar-enterprises-brighter-blockchain-solutions/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Solar ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">Core 5.0 — a next-generation consensus upgrade (BFT + BLS signatures, decoupled RPC nodes, ~20× throughput) — entered alpha in June 2024 and reached ~90% testnet completion by November 2025. <span style="color:#f6a623;">It was never released.</span> <a href="https://blog.solar.org/core-5-0-update-alpha-testing-performance-comparison/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Solar ↗</a> <a href="https://blog.solar.org/solar-november-2025-update-3/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Nov 2025 update ↗</a></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 5 -->
+      <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;overflow:hidden;">
+        <div data-acc="5" style="display:flex;align-items:center;justify-content:space-between;padding:22px 26px;cursor:pointer;user-select:none;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#5f5e66;">05</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#f4f3f6;">Resignation & wind-down</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5f5e66;">2025–2026</span>
+          </div>
+          <span style="font-size:20px;color:#8b8a93;transform:rotate(45deg);transition:transform .25s;">+</span>
+        </div>
+        <div style="display:block;padding:0 26px 8px;">
+          <div style="border-top:1px solid #15141a;padding-top:8px;">
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">November 2025 — the project's lead developer resigned, citing conditions that prevented further progress and confidentiality that limited transparency at the time. <a href="https://blog.solar.org/resignation-statement-nayiem-w/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Statement ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#8b8a93;background:rgba(255,255,255,.03);border:1px solid #2a2930;border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">FOUNDATION STATEMENT</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">January 2026 — the Foundation's Project Status Update stated no further protocol updates are planned, and that prospective successor teams declined after due diligence. It cited unresolved concerns about treasury custody residing outside the Solar team, card-fee/utility changes made without notice, and duplicated token supply on BSC distributed via external infrastructure — <span style="color:#8b8a93;font-style:italic;">the Foundation's stated position; the parties involved have not responded publicly.</span> <a href="https://blog.solar.org/solar-project-status-update/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Status Update ↗</a> <a href="agreement.html" style="color:#cbb27e;text-decoration:underline;">Token Swap Agreement ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">27–30 January 2026 — an open governance vote (SXP-GOV-2026-01) on an optional, voluntary migration framework was rejected on quorum (54.7% participation vs 67% required) despite 100% approval among votes cast. <a href="governance.html" style="color:#cbb27e;text-decoration:underline;">Proposal ↗</a> <a href="https://blog.solar.org/governance-proposal-outcome/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Outcome ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;border-bottom:1px solid #131218;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">2025–2026 — exchange support narrowed: Korean exchanges delisted SXP (March 2025); Binance ended SXP spot trading on 1 April 2026. <a href="https://cryptorank.io/news/feed/6a6db-sxp-delisting-upbit-bithumb-coinone" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">CryptoRank ↗</a> <a href="https://www.mexc.com/news/961572" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">MEXC ↗</a></div></div>
+            <div style="display:flex;gap:16px;padding:15px 0;"><span style="flex:none;width:152px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.08);border:1px solid rgba(70,211,154,.25);border-radius:5px;padding:4px 0;text-align:center;height:fit-content;letter-spacing:.03em;">VERIFIED</span><div style="font-size:14.5px;line-height:1.6;color:#c5c4cc;">The Foundation maintains seed infrastructure and this record; no Solar assets, code, governance authority, or infrastructure have been transferred to any successor. <a href="https://blog.solar.org/governance-proposal-outcome/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Outcome ↗</a></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="display:flex;gap:14px;margin-top:26px;">
+      <a href="history.html" style="display:inline-flex;align-items:center;gap:8px;background:#0e0d12;border:1px solid #2a2930;color:#f4f3f6;font-size:14px;font-weight:500;text-decoration:none;padding:13px 20px;border-radius:9px;" data-h="border-color:#3a3942;">Read the full research dossier (88 sources) →</a><a href="agreement.html" data-h="border-color:rgba(246,166,35,.5);" style="display:inline-flex;align-items:center;gap:8px;background:rgba(246,166,35,.08);border:1px solid rgba(246,166,35,.3);color:#f6a623;font-size:14px;font-weight:600;text-decoration:none;padding:13px 20px;border-radius:9px;">Binance Token Swap Agreement →</a>
+      <a href="report.html" data-h="border-color:#2a2930;color:#f4f3f6;" style="display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid #1c1b21;color:#a9a8b0;font-size:14px;font-weight:500;text-decoration:none;padding:13px 20px;border-radius:9px;">Read the community report &amp; 82 exhibits →</a>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid #1c1b21;background:#0c0b10;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:760px;height:260px;background:radial-gradient(ellipse at top,rgba(255,140,90,.10),rgba(255,140,90,0) 70%);pointer-events:none;"></div><div class="pagewrap" style="position:relative;max-width:1240px;margin:0 auto;padding:70px 32px;"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#f6a623;text-transform:uppercase;margin-bottom:16px;">The upgrade that was blocked</div><h2 class="h2sec" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;line-height:1.12;letter-spacing:-.02em;margin:0 0 14px;max-width:780px;">Core 5.0 was ready &mdash; here&rsquo;s why it could never ship.</h2><p style="font-size:16.5px;line-height:1.7;color:#9a99a2;max-width:780px;margin:0 0 30px;">Core 5.0 reached ~90% testnet completion. Releasing it required Binance&rsquo;s consent &mdash; conditioned, in the Foundation&rsquo;s account, on cancelling the agreed monthly timelock, transferring all remaining 18M SXP at once, and accepting personal liability, with no guarantee of listing. The underlying agreement is published in full.</p><div class="g3" style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;"><a href="core5.html" data-h="border-color:#2a2930;" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;text-decoration:none;display:block;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;margin-bottom:6px;">Core 5.0 &mdash; the blockers &rarr;</div><div style="font-size:13.5px;color:#8b8a93;line-height:1.5;">The full, document-backed breakdown</div></a><a href="agreement.html" data-h="border-color:#2a2930;" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;text-decoration:none;display:block;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;margin-bottom:6px;">Token Swap Agreement &rarr;</div><div style="font-size:13.5px;color:#8b8a93;line-height:1.5;">The Binance agreement, published in full</div></a><a href="report.html" data-h="border-color:#2a2930;" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;text-decoration:none;display:block;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;margin-bottom:6px;">Community report &rarr;</div><div style="font-size:13.5px;color:#8b8a93;line-height:1.5;">The record + 82 screenshot exhibits</div></a><a href="evidence.html" data-h="border-color:#2a2930;" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;text-decoration:none;display:block;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;margin-bottom:6px;">Evidence index &rarr;</div><div style="font-size:13.5px;color:#8b8a93;line-height:1.5;">All 82 exhibits, tallied by topic</div></a><a href="faq.html" data-h="border-color:#2a2930;" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;text-decoration:none;display:block;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;margin-bottom:6px;">Read the FAQ &rarr;</div><div style="font-size:13.5px;color:#8b8a93;line-height:1.5;">Straight answers to common questions</div></a></div></div></div>
+<!-- ===================== EXCHANGES ===================== -->
+  <div id="exchanges" class="pagewrap sec" style="max-width:1240px;margin:0 auto;padding:90px 32px 20px;scroll-margin-top:80px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#f6a623;text-transform:uppercase;margin-bottom:18px;">Where SXP trades</div>
+    <h2 class="h2sec" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;line-height:1.1;letter-spacing:-.02em;color:#f4f3f6;margin:0 0 18px;">Where SXP still trades.</h2>
+    <p style="font-size:16px;line-height:1.7;color:#9a99a2;max-width:780px;margin:0 0 12px;">SXP is the native token of the Solar mainnet. After major exchanges delisted in 2025–2026, remaining trading is on a small number of venues with low liquidity. The Foundation lists these for informational continuity only — <span style="color:#f4f3f6;">this is not an endorsement or financial advice.</span> Before depositing or withdrawing, confirm the deposit network is Solar mainnet (not a legacy contract).</p>
+    <div style="display:flex;align-items:center;gap:10px;margin:16px 0 22px;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#f6a623;background:rgba(246,166,35,.08);border:1px solid rgba(246,166,35,.28);border-radius:6px;padding:6px 12px;">⚠ Informational only — verify network before depositing</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46485a;">Last reviewed 2026-06-20</span>
+    </div>
+    <!-- table -->
+    <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;overflow:hidden;">
+      <div class="xhead" style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1.5fr;padding:16px 24px;border-bottom:1px solid #1c1b21;font-family:'JetBrains Mono',monospace;font-size:11px;color:#5f5e66;letter-spacing:.08em;">
+        <span>EXCHANGE</span><span>PAIR(S)</span><span>MARKET</span><span>NOTES</span>
+      </div>
+      <div class="xrow" style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1.5fr;padding:20px 24px;border-bottom:1px solid #15141a;align-items:center;">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;">HTX</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#a9a8b0;">SXP/USDT</span>
+        <a href="https://www.htx.com/en-us/trade/sxp_usdt" target="_blank" rel="noopener" style="font-size:13px;color:#cbb27e;text-decoration:underline;">Open ↗</a>
+        <span style="font-size:13px;color:#8b8a93;line-height:1.5;">Active; CoinGecko flags volume as anomaly — treat displayed volume skeptically.</span>
+      </div>
+      <div class="xrow" style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1.5fr;padding:20px 24px;border-bottom:1px solid #15141a;align-items:center;">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;">BVOX</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#a9a8b0;">SXP/USDT</span>
+        <a href="https://www.bitvenus.me/exchange/SXP/USDT" target="_blank" rel="noopener" style="font-size:13px;color:#cbb27e;text-decoration:underline;">Open ↗</a>
+        <span style="font-size:13px;color:#8b8a93;line-height:1.5;">Active; flagged anomaly.</span>
+      </div>
+      <div class="xrow" style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1.5fr;padding:20px 24px;border-bottom:1px solid #15141a;align-items:center;">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;">Poloniex</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#a9a8b0;">SXP/USDT</span>
+        <a href="https://poloniex.com/spot/SXP_USDT" target="_blank" rel="noopener" style="font-size:13px;color:#cbb27e;text-decoration:underline;">Open ↗</a>
+        <span style="font-size:13px;color:#8b8a93;line-height:1.5;">Listed but effectively inactive.</span>
+      </div>
+      <div class="xrow" style="display:grid;grid-template-columns:1fr 1.3fr 1fr 1.5fr;padding:20px 24px;align-items:center;">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;">HitBTC</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#a9a8b0;">SXP/USDT · /BTC · /USDC</span>
+        <a href="https://hitbtc.com/sxp-to-usdt" target="_blank" rel="noopener" style="font-size:13px;color:#cbb27e;text-decoration:underline;">Open ↗</a>
+        <span style="font-size:13px;color:#8b8a93;line-height:1.5;">Near-dead (~$1/day); page explicitly lists "Solar mainnet SXP".</span>
+      </div>
+    </div>
+    <!-- guidance cards -->
+    <div class="g2guid" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;">
+      <div style="background:#0c0b10;border:1px solid #1c1b21;border-radius:14px;padding:26px;">
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;color:#f4f3f6;margin-bottom:10px;">For holders</div>
+        <p style="font-size:14.5px;line-height:1.65;color:#8b8a93;margin:0;">If you self-custody SXP, your wallet and the network continue to operate. Verify balances and transactions on <a href="https://solarscan.com" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Solarscan</a>. The Foundation makes no price predictions and no guarantees about liquidity or future listings.</p>
+      </div>
+      <div style="background:#0c0b10;border:1px solid #1c1b21;border-radius:14px;padding:26px;">
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;color:#f4f3f6;margin-bottom:10px;">For exchanges</div>
+        <p style="font-size:14.5px;line-height:1.65;color:#8b8a93;margin:0;">Exchanges needing to support SXP deposits/withdrawals during wind-down can reach the Foundation for technical continuity help (node endpoints, explorer, network parameters): <a href="mailto:hello@solar.org" style="color:#cbb27e;text-decoration:underline;">hello@solar.org</a>. The Foundation cannot make listing or market decisions.</p>
+      </div>
+    </div>
+    <a href="exchanges.html" style="display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-size:14px;color:#f6a623;text-decoration:none;font-weight:500;" data-h="gap:11px;">Full exchanges & holder guidance →</a>
+  </div>
+
+  <!-- ===================== GET INVOLVED ===================== -->
+  <div id="get-involved" style="position:relative;margin-top:90px;border-top:1px solid #1c1b21;background:#0c0b10;scroll-margin-top:80px;">
+    <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:700px;height:300px;background:radial-gradient(ellipse at top, rgba(255,140,90,.1), rgba(255,140,90,0) 70%);pointer-events:none;"></div>
+    <div class="pagewrap" style="position:relative;max-width:1240px;margin:0 auto;padding:80px 32px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#f6a623;text-transform:uppercase;margin-bottom:18px;">Get involved</div>
+      <h2 class="h2sec" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;line-height:1.1;letter-spacing:-.02em;color:#f4f3f6;margin:0 0 18px;max-width:680px;">Solar is open for stewardship.</h2>
+      <p style="font-size:16.5px;line-height:1.7;color:#9a99a2;max-width:740px;margin:0 0 36px;">Solar is open-source and remains open for any credible organization, foundation, or contributor better positioned to take a more active role in its development. The Foundation will reasonably assist a genuine successor's technical transition. If your team is interested, contact <a href="mailto:hello@solar.org" style="color:#cbb27e;text-decoration:underline;">hello@solar.org</a>.</p>
+      <div class="ginv" style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;">
+        <a href="https://github.com/Solar-network" target="_blank" rel="noopener" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:12px;padding:22px;text-decoration:none;display:block;" data-h="border-color:#2a2930;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;margin-bottom:6px;">GitHub ↗</div><div style="font-size:13px;color:#8b8a93;">Open-source core & repos</div></a>
+        <a href="https://solarscan.com" target="_blank" rel="noopener" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:12px;padding:22px;text-decoration:none;display:block;" data-h="border-color:#2a2930;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;margin-bottom:6px;">Explorer ↗</div><div style="font-size:13px;color:#8b8a93;">Solarscan block explorer</div></a>
+        <a href="governance.html" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:12px;padding:22px;text-decoration:none;display:block;" data-h="border-color:#2a2930;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;margin-bottom:6px;">Governance →</div><div style="font-size:13px;color:#8b8a93;">SXP-GOV-2026-01 record</div></a>
+        <a href="history.html" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:12px;padding:22px;text-decoration:none;display:block;" data-h="border-color:#2a2930;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;margin-bottom:6px;">Transparency →</div><div style="font-size:13px;color:#8b8a93;">The full history record</div></a>
+        
+        
+        <a href="archive.html" style="background:#0e0d12;border:1px solid #1c1b21;border-radius:12px;padding:22px;text-decoration:none;display:block;" data-h="border-color:#2a2930;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f4f3f6;margin-bottom:6px;">Archive →</div><div style="font-size:13px;color:#8b8a93;">Blog snapshots</div></a>
+        <a href="mailto:hello@solar.org" style="background:linear-gradient(135deg,rgba(255,194,74,.12),rgba(255,106,94,.12));border:1px solid rgba(246,166,35,.3);border-radius:12px;padding:22px;text-decoration:none;display:block;" data-h="border-color:rgba(246,166,35,.5);"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#f6a623;margin-bottom:6px;">Contact →</div><div style="font-size:13px;color:#a9a8b0;">hello@solar.org</div></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <div style="border-top:1px solid #1c1b21;background:#0a0a0d;">
+    <div class="pagewrap" style="max-width:1240px;margin:0 auto;padding:56px 32px 40px;">
+      <div class="gfoot" style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px;">
+            <img src="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png" alt="Solar" style="width:26px;height:26px;border-radius:6px;" />
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">Solar</span>
+          </div>
+          <div style="font-size:14px;color:#8b8a93;line-height:1.6;margin-bottom:8px;">© The Solar Foundation</div>
+          <div style="font-size:13.5px;color:#5f5e66;line-height:1.6;max-width:300px;">An open-source dPoS blockchain. Maintained for transparency and continuity.</div>
+        </div>
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#5f5e66;letter-spacing:.1em;margin-bottom:16px;">NETWORK</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:14px;color:#a9a8b0;">
+            <a href="https://solarscan.com" target="_blank" rel="noopener" style="text-decoration:none;" data-h="color:#f4f3f6;">Explorer</a>
+            <a href="https://github.com/Solar-network" target="_blank" rel="noopener" style="text-decoration:none;" data-h="color:#f4f3f6;">GitHub</a>
+            <a href="status.html" style="text-decoration:none;" data-h="color:#f4f3f6;">Status</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#5f5e66;letter-spacing:.1em;margin-bottom:16px;">RECORD</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:14px;color:#a9a8b0;">
+            <a href="history.html" style="text-decoration:none;" data-h="color:#f4f3f6;">History</a>
+            <a href="governance.html" style="text-decoration:none;" data-h="color:#f4f3f6;">Governance</a>
+            <a href="archive.html" style="text-decoration:none;" data-h="color:#f4f3f6;">Archive</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#5f5e66;letter-spacing:.1em;margin-bottom:16px;">CONTACT</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:14px;color:#a9a8b0;">
+            <a href="mailto:hello@solar.org" style="text-decoration:none;" data-h="color:#f4f3f6;">hello@solar.org</a>
+            <a href="exchanges.html" style="text-decoration:none;" data-h="color:#f4f3f6;">Exchanges</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #1c1b21;margin-top:40px;padding-top:24px;font-size:12.5px;line-height:1.7;color:#5f5e66;max-width:920px;">This site is a transparency and information record published by The Solar Foundation. It is not financial, investment, or legal advice. Factual statements link to primary sources; some statements reflect the Foundation's stated position and are labelled accordingly. Nothing here is an offer, solicitation, or endorsement of any token or exchange.</div>
+    </div>
+  </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

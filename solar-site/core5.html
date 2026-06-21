@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Core 5.0 — the upgrade that was blocked — Solar</title>
+<meta name="description" content="Core 5.0 was ~90% through testnet. This is the document-backed account of why it could never ship — the consent gate, the treasury, the timelock, and the personal-liability agreement.">
+<meta property="og:title" content="Core 5.0 — the upgrade that was blocked">
+<meta property="og:description" content="Why Solar's next-generation upgrade could never ship.">
+<link rel="icon" href="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;} html{scroll-behavior:smooth;} body{margin:0;background:#0a0a0d;}
+  ::selection{background:rgba(255,150,90,.3);color:#fff;}
+  a{color:inherit;}
+  @keyframes solarPulse{0%,100%{opacity:.5;transform:scale(1);}50%{opacity:1;transform:scale(1.3);}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;}}
+  .body p{font-size:16px;line-height:1.74;color:#bcbbc4;margin:0 0 16px;}
+  .tl{position:relative;padding-left:28px;border-left:1px solid #1c1b21;margin-left:6px;}
+  .tl .node{position:relative;padding:0 0 26px;}
+  .tl .node:before{content:"";position:absolute;left:-34px;top:5px;width:9px;height:9px;border-radius:50%;background:#f6a623;}
+  @media (max-width:680px){.c5-h1{font-size:32px !important;} .blk{grid-template-columns:1fr !important;}}
+</style>
+
+<!--seo-->
+<link rel="canonical" href="https://solar.org/core5">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0a0a0d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Solar Foundation">
+<meta property="og:url" content="https://solar.org/core5">
+<meta property="og:image" content="https://solar.org/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Core 5.0 — the upgrade that was blocked — Solar">
+<meta name="twitter:description" content="Core 5.0 was ~90% through testnet. This is the document-backed account of why it could never ship — the consent gate, the treasury, the timelock, and the personal-liability agreement.">
+<meta name="twitter:image" content="https://solar.org/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://solar.org/#org","name":"The Solar Foundation","url":"https://solar.org/","logo":"https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png","sameAs":["https://github.com/Solar-network","https://blog.solar.org","https://solarscan.com"]},{"@type":"WebPage","@id":"https://solar.org/core5#page","url":"https://solar.org/core5","name":"Core 5.0 \u2014 the upgrade that was blocked \u2014 Solar","description":"Core 5.0 was ~90% through testnet. This is the document-backed account of why it could never ship \u2014 the consent gate, the treasury, the timelock, and the personal-liability agreement.","isPartOf":{"@id":"https://solar.org/#website"},"publisher":{"@id":"https://solar.org/#org"},"inLanguage":"en"},{"@type":"WebSite","@id":"https://solar.org/#website","url":"https://solar.org/","name":"Solar (SXP) \u2014 The Solar Foundation","publisher":{"@id":"https://solar.org/#org"},"inLanguage":"en"}]}</script>
+
+<style>/*navcss*/
+.snav{position:sticky;top:0;z-index:100;background:rgba(10,10,13,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1c1b21;}
+.snav-in{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 28px;}
+.snav-logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex:none;}
+.snav-menu{display:flex;align-items:center;gap:4px;}
+.snav-menu>a,.snav-ddbtn{font-family:'Manrope',sans-serif;font-size:14px;color:#a9a8b0;text-decoration:none;background:none;border:none;cursor:pointer;padding:8px 12px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;line-height:1;}
+.snav-menu>a:hover,.snav-ddbtn:hover{color:#f4f3f6;background:rgba(255,255,255,.05);}
+.snav-dd{position:relative;}
+.snav-ddmenu{position:absolute;top:calc(100% + 8px);left:0;min-width:248px;background:#0e0d12;border:1px solid #232228;border-radius:12px;padding:7px;box-shadow:0 24px 60px rgba(0,0,0,.55);display:none;flex-direction:column;gap:1px;z-index:130;}
+.snav-dd:hover .snav-ddmenu,.snav-dd.open .snav-ddmenu{display:flex;}
+.snav-ddmenu a{font-family:'Manrope',sans-serif;font-size:13.5px;color:#bcbbc4;text-decoration:none;padding:10px 12px;border-radius:8px;white-space:nowrap;display:flex;flex-direction:column;gap:2px;}
+.snav-ddmenu a:hover{background:rgba(255,255,255,.05);color:#f4f3f6;}
+.snav-ddmenu a small{color:#5f5e66;font-size:11.5px;}
+.snav-cta{flex:none;font-family:'Manrope',sans-serif;font-size:14px;color:#f4f3f6;text-decoration:none;border:1px solid #2a2930;border-radius:8px;padding:8px 15px;}
+.snav-cta:hover{border-color:#3a3942;background:rgba(255,255,255,.04);}
+.snav-tg{display:none;background:none;border:1px solid #2a2930;border-radius:8px;color:#f4f3f6;font-size:17px;line-height:1;padding:7px 12px;cursor:pointer;}
+.snav-caret{font-size:9px;opacity:.65;}
+@media (max-width:880px){
+  .snav-tg{display:block;}
+  .snav-cta{display:none;}
+  .snav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#0b0a0e;border-bottom:1px solid #1c1b21;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 18px;max-height:82vh;overflow:auto;}
+  .snav.open .snav-menu{display:flex;}
+  .snav-menu>a{padding:13px 8px;border-bottom:1px solid #15141a;}
+  .snav-ddbtn{width:100%;justify-content:space-between;padding:14px 8px 6px;color:#f6a623;font-size:12px;letter-spacing:.06em;text-transform:uppercase;}
+  .snav-ddmenu{position:static;display:flex;box-shadow:none;border:none;background:transparent;padding:0 0 8px 6px;min-width:0;}
+  .snav-caret{display:none;}
+}
+</style>
+</head>
+<body>
+<div style="background:#0a0a0d;font-family:'Manrope',sans-serif;color:#f4f3f6;min-height:100vh;overflow-x:hidden;">
+
+  <!-- NAV -->
+  <header class="snav">
+  <div class="snav-in">
+    <a class="snav-logo" href="/"><img src="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png" alt="Solar" style="width:26px;height:26px;border-radius:6px;" /><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">Solar</span><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5f5e66;border:1px solid #1c1b21;border-radius:4px;padding:2px 7px;letter-spacing:.06em;">FOUNDATION</span></a>
+    <button class="snav-tg" aria-label="Toggle menu">&#9776;</button>
+    <nav class="snav-menu">
+      <a href="/status">Status</a>
+      <div class="snav-dd">
+        <button class="snav-ddbtn" type="button">Transparency <span class="snav-caret">&#9660;</span></button>
+        <div class="snav-ddmenu">
+          <a href="/history">History &amp; timeline<small>Full sourced chronology, 2018&ndash;2026</small></a>
+          <a href="/core5">Core 5.0 &mdash; the blockers<small>Why the upgrade could never ship</small></a>
+          <a href="/agreement">Token Swap Agreement<small>The Binance agreement, full text</small></a>
+          <a href="/report">Community report<small>The record + 82 screenshot exhibits</small></a>
+          <a href="/evidence">Evidence index<small>All 82 exhibits, tallied by topic</small></a>
+          <a href="/archive">Blog archive<small>Snapshots of official posts</small></a>
+        </div>
+      </div>
+      <div class="snav-dd">
+        <button class="snav-ddbtn" type="button">Network <span class="snav-caret">&#9660;</span></button>
+        <div class="snav-ddmenu">
+          <a href="/governance">Governance<small>SXP-GOV-2026-01 vote record</small></a>
+          <a href="/exchanges">Where SXP trades<small>Remaining venues + guidance</small></a>
+          <a href="https://solarscan.com" target="_blank" rel="noopener">Block explorer &#8599;<small>Solarscan</small></a>
+          <a href="https://github.com/Solar-network" target="_blank" rel="noopener">GitHub &#8599;<small>Open-source core</small></a>
+          <a href="mailto:hello@solar.org">Contact<small>hello@solar.org</small></a>
+        </div>
+      </div>
+      <a href="/faq">FAQ</a>
+    </nav>
+    <a class="snav-cta" href="https://solarscan.com" target="_blank" rel="noopener">Open Explorer</a>
+  </div>
+</header>
+
+  <div style="max-width:1080px;margin:0 auto;padding:0 28px;">
+    <!-- HERO -->
+    <div style="padding:60px 0 30px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;color:#f6a623;text-transform:uppercase;margin-bottom:18px;">The upgrade that was blocked</div>
+      <h1 class="c5-h1" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:50px;line-height:1.05;letter-spacing:-.025em;margin:0;max-width:880px;">Core 5.0 was ready. It could <span style="background:linear-gradient(135deg,#ffc24a,#ff6a5e);-webkit-background-clip:text;background-clip:text;color:transparent;">never ship.</span></h1>
+      <p style="font-size:18px;line-height:1.6;color:#a9a8b0;margin:24px 0 0;max-width:720px;">By late 2025, Core 5.0 — a ground-up consensus rewrite (BFT + BLS, decoupled RPC, ~20&times; throughput) — had reached roughly <strong style="color:#f4f3f6;">90% testnet completion</strong>. The barrier to releasing it was never technical. This page sets out, with the underlying document, why the upgrade was blocked.</p>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;">
+        <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#8b8a93;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 8px;">DOCUMENT-BACKED</span> shown in the published agreement</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#8b8a93;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8b8a93;background:rgba(255,255,255,.03);border:1px solid #2a2930;border-radius:5px;padding:3px 8px;">FOUNDATION STATEMENT</span> the Foundation's account, not yet independently confirmed</span>
+      </div>
+    </div>
+
+    <!-- HOW WE GOT HERE -->
+    <div style="padding:40px 0 10px;" class="body">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;letter-spacing:-.02em;margin:0 0 22px;">How we got here</h2>
+      <div class="tl">
+        <div class="node">
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#f6a623;">2022 — Mainnet transition</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#8b8a93;background:rgba(255,255,255,.03);border:1px solid #2a2930;border-radius:5px;padding:3px 7px;">FOUNDATION STATEMENT</span></div>
+          <p style="margin:0;">A move to an independent mainnet was pursued under heavy external pressure. As a condition of support, a treasury wallet that was meant to belong to the project was, in the Foundation's account, required to be placed under Binance's control — without it, the mainnet transition would not be supported.</p>
+        </div>
+        <div class="node">
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#f6a623;">18 July 2023 — The timelock arrangement</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">DOCUMENT-BACKED</span></div>
+          <p style="margin:0;">A swap arrangement set a measured, ethical release schedule: <strong style="color:#f4f3f6;">31,200,000 SXP</strong> to be released at <strong style="color:#f4f3f6;">600,000 SXP per month</strong>. A monthly timelock protected the market and the community from a sudden dump. By the later agreement's effective date, 13,200,000 SXP had been released and 18,000,000 remained. <a href="agreement.html" style="color:#cbb27e;text-decoration:underline;">See the agreement, &sect;4 &#8599;</a></p>
+        </div>
+        <div class="node">
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#f6a623;">2024–2025 — Core 5.0 built</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">VERIFIED</span></div>
+          <p style="margin:0;">Core 5.0 entered alpha in June 2024 (~20&times; faster than Core 4.3.1) and reached ~90% testnet completion by November 2025 — BFT consensus, BLS signatures, deterministic block production, decoupled RPC nodes. <a href="https://blog.solar.org/solar-november-2025-update-3/" target="_blank" rel="noopener" style="color:#cbb27e;text-decoration:underline;">Nov 2025 update &#8599;</a></p>
+        </div>
+        <div class="node">
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#f6a623;">2025 — The price of shipping Core 5.0</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">DOCUMENT-BACKED</span></div>
+          <p style="margin:0;">To proceed, the Foundation was presented with a new Token Swap Agreement. It would have required cancelling the agreed monthly timelock and transferring <strong style="color:#f4f3f6;">all remaining 18,000,000 SXP at once</strong>, accepting <strong style="color:#f4f3f6;">personal liability</strong>, and obtaining Binance's consent for the upgrade — <span style="color:#f4f3f6;">with no guarantee that Core 5.0 would be listed on Binance.</span> <a href="agreement.html" style="color:#cbb27e;text-decoration:underline;">Read the full agreement &#8599;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- THE BLOCKERS -->
+    <div style="padding:34px 0 10px;">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;letter-spacing:-.02em;margin:0 0 8px;">The blockers</h2>
+      <p style="font-size:15.5px;line-height:1.7;color:#9a99a2;max-width:760px;margin:0 0 26px;">Each blocker below links to the clause in the published <a href="agreement.html" style="color:#cbb27e;text-decoration:underline;">Token Swap Agreement</a> that establishes it. Together they made an independent Core 5.0 release impossible.</p>
+      <div class="blk" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+
+        <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;" data-h="border-color:#2a2930;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">1. The consent gate</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">cl. 5c</span></div>
+          <p style="font-size:14.5px;line-height:1.62;color:#bcbbc4;margin:0;">The Foundation had to obtain <strong style="color:#f4f3f6;">Binance's prior written consent</strong> before any token swap or any mainnet swap or integration. Core 5.0 is exactly that kind of change — so it could not be deployed without consent.</p>
+        </div>
+
+        <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;" data-h="border-color:#2a2930;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">2. The keep-live lock</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">cl. 5b</span></div>
+          <p style="font-size:14.5px;line-height:1.62;color:#bcbbc4;margin:0;">The current mainnet had to be kept live and could not be replaced or made ineffective without consent — which is what migrating to a new chain would do.</p>
+        </div>
+
+        <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;" data-h="border-color:#2a2930;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">3. The treasury</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">cl. 5d</span></div>
+          <p style="font-size:14.5px;line-height:1.62;color:#bcbbc4;margin:0;">The wallet and the SXP within it are stated to <strong style="color:#f4f3f6;">belong to Binance</strong> — a treasury that, in the Foundation's account, was meant to be the project's, and whose handover was a condition of the original mainnet support.</p>
+        </div>
+
+        <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;" data-h="border-color:#2a2930;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">4. Break the timelock</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">cl. 5a</span></div>
+          <p style="font-size:14.5px;line-height:1.62;color:#bcbbc4;margin:0;">In place of the agreed 600,000 SXP/month schedule, the new terms required sending the <strong style="color:#f4f3f6;">entire remaining 18,000,000 SXP at once</strong> (by 18 Feb 2026). Abandoning the timelock that protected the community was, in the Foundation's view, ethically wrong.</p>
+        </div>
+
+        <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;" data-h="border-color:#2a2930;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">5. Personal liability</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#46d39a;background:rgba(70,211,154,.1);border:1px solid rgba(70,211,154,.3);border-radius:5px;padding:3px 7px;">cl. 5e</span></div>
+          <p style="font-size:14.5px;line-height:1.62;color:#bcbbc4;margin:0;">Solar <em>and an individual</em> would be <strong style="color:#f4f3f6;">jointly and severally liable</strong>, with indemnification flowing to Binance — while Binance's own total liability was capped at <strong style="color:#f4f3f6;">US$10,000</strong> and it could terminate at any time without cause.</p>
+        </div>
+
+        <div style="background:#0e0d12;border:1px solid #1c1b21;border-radius:14px;padding:24px;" data-h="border-color:#2a2930;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">6. No listing guarantee</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#8b8a93;background:rgba(255,255,255,.03);border:1px solid #2a2930;border-radius:5px;padding:3px 7px;">FOUNDATION STATEMENT</span></div>
+          <p style="font-size:14.5px;line-height:1.62;color:#bcbbc4;margin:0;">In exchange for all of the above, there was <strong style="color:#f4f3f6;">no commitment that Core 5.0 — or its token — would be listed or supported on Binance.</strong> All of the obligation sat on one side; none of the assurance did.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY WE DID NOT SIGN -->
+    <div style="padding:40px 0 10px;" class="body">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;letter-spacing:-.02em;margin:0 0 16px;">Why the Foundation did not sign</h2>
+      <p>Signing would have meant breaking a community-protecting timelock, transferring the remaining supply in a single block, and accepting open-ended personal and corporate liability — in return for a one-sided contract with a US$10,000 liability cap on the other side, a unilateral right to terminate, and no guarantee of listing or support. As the resignation statement put it, the request &ldquo;looked polite on the surface but was structured in a way no reasonable person could sign.&rdquo;</p>
+      <p>So Core 5.0 — the work that would have given Solar genuine independence and removed its reliance on any single gatekeeper — was shelved, and the project's lead stepped down rather than sign. The network remains on Core 4.3.1 in maintenance-only mode.</p>
+      <div style="background:#0c0b10;border:1px solid #1c1b21;border-radius:12px;padding:18px 22px;margin:14px 0 0;font-size:13.5px;line-height:1.7;color:#8b8a93;">
+        Points marked <span style="color:#46d39a;">DOCUMENT-BACKED</span> are established by the published <a href="agreement.html" style="color:#cbb27e;text-decoration:underline;">Token Swap Agreement</a>. Points marked <span style="color:#a9a8b0;">FOUNDATION STATEMENT</span> are the Foundation's account, presented for context and not yet independently confirmed; the other parties have not responded publicly. This page is an information record, not legal advice or an accusation of wrongdoing.
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="display:flex;gap:14px;flex-wrap:wrap;padding:30px 0 70px;">
+      <a href="agreement.html" data-h="filter:brightness(1.06);" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#ffc24a,#ff6a5e);color:#1a0d05;font-weight:600;font-size:15px;text-decoration:none;padding:14px 22px;border-radius:8px;">Read the full agreement →</a>
+      <a href="faq.html" data-h="border-color:#3a3942;" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f4f3f6;font-weight:500;font-size:15px;text-decoration:none;padding:14px 22px;border-radius:8px;border:1px solid #2a2930;">Read the FAQ →</a>
+      <a href="history.html" data-h="border-color:#3a3942;" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#a9a8b0;font-weight:500;font-size:15px;text-decoration:none;padding:14px 22px;border-radius:8px;border:1px solid #1c1b21;">Full history →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="border-top:1px solid #1c1b21;background:#0a0a0d;">
+    <div style="max-width:1080px;margin:0 auto;padding:30px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:13px;color:#5f5e66;">
+      <span>&copy; The Solar Foundation &middot; Maintained for transparency and continuity.</span>
+      <a href="mailto:hello@solar.org" data-h="color:#f4f3f6;" style="color:#a9a8b0;text-decoration:none;">hello@solar.org</a>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

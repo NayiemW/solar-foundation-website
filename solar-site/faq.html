@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Solar (SXP)</title>
+<meta name="description" content="Frequently asked questions about Solar (SXP): Core 5.0, the Binance agreement, the timelock, the supply, the Solar Card ticker, Monolythium, and what happens now.">
+<meta property="og:title" content="FAQ — Solar (SXP)">
+<meta property="og:description" content="Straight answers about Core 5.0, the agreement, the supply, and what happens now.">
+<link rel="icon" href="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;} html{scroll-behavior:smooth;} body{margin:0;background:#0a0a0d;}
+  ::selection{background:rgba(255,150,90,.3);color:#fff;}
+  a{color:inherit;}
+  details{background:#0e0d12;border:1px solid #1c1b21;border-radius:13px;margin:0 0 12px;overflow:hidden;}
+  details[open]{border-color:#2a2930;}
+  summary{list-style:none;cursor:pointer;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;}
+  summary::-webkit-details-marker{display:none;}
+  summary:after{content:"+";font-family:'JetBrains Mono',monospace;font-size:20px;color:#8b8a93;flex:none;transition:transform .2s;}
+  details[open] summary:after{content:"+";transform:rotate(45deg);}
+  .ans{padding:0 24px 22px;}
+  .ans p{font-size:15px;line-height:1.74;color:#bcbbc4;margin:0 0 12px;}
+  .ans a{color:#cbb27e;text-decoration:underline;}
+  .grp{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;color:#f6a623;text-transform:uppercase;margin:34px 0 14px;}
+  .pos{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.04em;padding:3px 8px;border-radius:5px;color:#8b8a93;background:rgba(255,255,255,.03);border:1px solid #2a2930;white-space:nowrap;}
+  @media (max-width:680px){.faq-h1{font-size:34px !important;} summary{font-size:15.5px;}}
+</style>
+
+<!--seo-->
+<link rel="canonical" href="https://solar.org/faq">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0a0a0d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Solar Foundation">
+<meta property="og:url" content="https://solar.org/faq">
+<meta property="og:image" content="https://solar.org/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FAQ — Solar (SXP)">
+<meta name="twitter:description" content="Frequently asked questions about Solar (SXP): Core 5.0, the Binance agreement, the timelock, the supply, the Solar Card ticker, Monolythium, and what happens now.">
+<meta name="twitter:image" content="https://solar.org/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://solar.org/#org","name":"The Solar Foundation","url":"https://solar.org/","logo":"https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png","sameAs":["https://github.com/Solar-network","https://blog.solar.org","https://solarscan.com"]},{"@type":"WebPage","@id":"https://solar.org/faq#page","url":"https://solar.org/faq","name":"FAQ \u2014 Solar (SXP)","description":"Frequently asked questions about Solar (SXP): Core 5.0, the Binance agreement, the timelock, the supply, the Solar Card ticker, Monolythium, and what happens now.","isPartOf":{"@id":"https://solar.org/#website"},"publisher":{"@id":"https://solar.org/#org"},"inLanguage":"en"},{"@type":"WebSite","@id":"https://solar.org/#website","url":"https://solar.org/","name":"Solar (SXP) \u2014 The Solar Foundation","publisher":{"@id":"https://solar.org/#org"},"inLanguage":"en"}]}</script>
+
+<style>/*navcss*/
+.snav{position:sticky;top:0;z-index:100;background:rgba(10,10,13,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1c1b21;}
+.snav-in{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 28px;}
+.snav-logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex:none;}
+.snav-menu{display:flex;align-items:center;gap:4px;}
+.snav-menu>a,.snav-ddbtn{font-family:'Manrope',sans-serif;font-size:14px;color:#a9a8b0;text-decoration:none;background:none;border:none;cursor:pointer;padding:8px 12px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;line-height:1;}
+.snav-menu>a:hover,.snav-ddbtn:hover{color:#f4f3f6;background:rgba(255,255,255,.05);}
+.snav-dd{position:relative;}
+.snav-ddmenu{position:absolute;top:calc(100% + 8px);left:0;min-width:248px;background:#0e0d12;border:1px solid #232228;border-radius:12px;padding:7px;box-shadow:0 24px 60px rgba(0,0,0,.55);display:none;flex-direction:column;gap:1px;z-index:130;}
+.snav-dd:hover .snav-ddmenu,.snav-dd.open .snav-ddmenu{display:flex;}
+.snav-ddmenu a{font-family:'Manrope',sans-serif;font-size:13.5px;color:#bcbbc4;text-decoration:none;padding:10px 12px;border-radius:8px;white-space:nowrap;display:flex;flex-direction:column;gap:2px;}
+.snav-ddmenu a:hover{background:rgba(255,255,255,.05);color:#f4f3f6;}
+.snav-ddmenu a small{color:#5f5e66;font-size:11.5px;}
+.snav-cta{flex:none;font-family:'Manrope',sans-serif;font-size:14px;color:#f4f3f6;text-decoration:none;border:1px solid #2a2930;border-radius:8px;padding:8px 15px;}
+.snav-cta:hover{border-color:#3a3942;background:rgba(255,255,255,.04);}
+.snav-tg{display:none;background:none;border:1px solid #2a2930;border-radius:8px;color:#f4f3f6;font-size:17px;line-height:1;padding:7px 12px;cursor:pointer;}
+.snav-caret{font-size:9px;opacity:.65;}
+@media (max-width:880px){
+  .snav-tg{display:block;}
+  .snav-cta{display:none;}
+  .snav-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#0b0a0e;border-bottom:1px solid #1c1b21;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 18px;max-height:82vh;overflow:auto;}
+  .snav.open .snav-menu{display:flex;}
+  .snav-menu>a{padding:13px 8px;border-bottom:1px solid #15141a;}
+  .snav-ddbtn{width:100%;justify-content:space-between;padding:14px 8px 6px;color:#f6a623;font-size:12px;letter-spacing:.06em;text-transform:uppercase;}
+  .snav-ddmenu{position:static;display:flex;box-shadow:none;border:none;background:transparent;padding:0 0 8px 6px;min-width:0;}
+  .snav-caret{display:none;}
+}
+</style>
+</head>
+<body>
+<div style="background:#0a0a0d;font-family:'Manrope',sans-serif;color:#f4f3f6;min-height:100vh;">
+
+  <!-- NAV -->
+  <header class="snav">
+  <div class="snav-in">
+    <a class="snav-logo" href="/"><img src="https://storage.ghost.io/c/32/25/3225f39c-c8f7-41ca-b74e-7db2f5ea653a/content/images/size/w256h256/2025/03/favicon.png" alt="Solar" style="width:26px;height:26px;border-radius:6px;" /><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#f4f3f6;">Solar</span><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5f5e66;border:1px solid #1c1b21;border-radius:4px;padding:2px 7px;letter-spacing:.06em;">FOUNDATION</span></a>
+    <button class="snav-tg" aria-label="Toggle menu">&#9776;</button>
+    <nav class="snav-menu">
+      <a href="/status">Status</a>
+      <div class="snav-dd">
+        <button class="snav-ddbtn" type="button">Transparency <span class="snav-caret">&#9660;</span></button>
+        <div class="snav-ddmenu">
+          <a href="/history">History &amp; timeline<small>Full sourced chronology, 2018&ndash;2026</small></a>
+          <a href="/core5">Core 5.0 &mdash; the blockers<small>Why the upgrade could never ship</small></a>
+          <a href="/agreement">Token Swap Agreement<small>The Binance agreement, full text</small></a>
+          <a href="/report">Community report<small>The record + 82 screenshot exhibits</small></a>
+          <a href="/evidence">Evidence index<small>All 82 exhibits, tallied by topic</small></a>
+          <a href="/archive">Blog archive<small>Snapshots of official posts</small></a>
+        </div>
+      </div>
+      <div class="snav-dd">
+        <button class="snav-ddbtn" type="button">Network <span class="snav-caret">&#9660;</span></button>
+        <div class="snav-ddmenu">
+          <a href="/governance">Governance<small>SXP-GOV-2026-01 vote record</small></a>
+          <a href="/exchanges">Where SXP trades<small>Remaining venues + guidance</small></a>
+          <a href="https://solarscan.com" target="_blank" rel="noopener">Block explorer &#8599;<small>Solarscan</small></a>
+          <a href="https://github.com/Solar-network" target="_blank" rel="noopener">GitHub &#8599;<small>Open-source core</small></a>
+          <a href="mailto:hello@solar.org">Contact<small>hello@solar.org</small></a>
+        </div>
+      </div>
+      <a href="/faq">FAQ</a>
+    </nav>
+    <a class="snav-cta" href="https://solarscan.com" target="_blank" rel="noopener">Open Explorer</a>
+  </div>
+</header>
+
+  <div style="max-width:860px;margin:0 auto;padding:52px 28px 90px;">
+    <h1 class="faq-h1" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:46px;line-height:1.06;letter-spacing:-.025em;margin:0;">Frequently asked questions.</h1>
+    <p style="font-size:17px;line-height:1.7;color:#9a99a2;max-width:720px;margin:20px 0 8px;">Straight answers about Core 5.0, the Binance agreement, the supply, the Solar Card, and what happens now. Answers labelled <span class="pos">FOUNDATION STATEMENT</span> are the Foundation's account, presented for context and not yet independently confirmed; the other parties have not responded publicly. Where an answer is established by the published <a href="agreement.html" style="color:#cbb27e;text-decoration:underline;">Token Swap Agreement</a>, the clause is cited.</p>
+
+    <!-- ===== CORE 5.0 & THE AGREEMENT ===== -->
+    <div class="grp">Core 5.0 &amp; the agreement</div>
+
+    <details open>
+      <summary>Why couldn't Solar upgrade to Core 5.0?</summary>
+      <div class="ans">
+        <p>Core 5.0 was roughly 90% through testnet — the barrier was never technical. Under the <a href="agreement.html">Token Swap Agreement</a>, the Foundation could not change the mainnet (cl. 5b) or carry out any token/mainnet swap or integration (cl. 5c) <strong>without Binance's prior written consent</strong>. A new chain is exactly that kind of change, so Core 5.0 could not be deployed independently.</p>
+        <p>Binance's consent was, in the Foundation's account, conditioned on signing a new agreement that required cancelling the agreed monthly timelock and sending all remaining 18,000,000 SXP at once, accepting personal liability — and with no guarantee Core 5.0 would even be listed. <a href="core5.html">See the full Core 5.0 breakdown →</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why didn't the Foundation just sign the agreement?</summary>
+      <div class="ans">
+        <p>The terms were one-sided and personal. Solar <em>and an individual</em> would be <strong>jointly and severally liable</strong> (cl. 5e) and would indemnify Binance, while <strong>Binance's own total liability was capped at US$10,000</strong> and Binance could terminate at any time without cause. In return there was no commitment to list or support Core 5.0. <span class="pos">FOUNDATION STATEMENT</span></p>
+        <p>As the resignation statement put it, the request &ldquo;looked polite on the surface but was structured in a way no reasonable person could sign.&rdquo; Signing would also have meant breaking a community-protecting timelock — which the Foundation considered ethically wrong. <a href="agreement.html">Read the agreement →</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What was the &ldquo;timelock,&rdquo; and why does breaking it matter?</summary>
+      <div class="ans">
+        <p>A 2023 arrangement set a measured release of <strong>31,200,000 SXP</strong> at <strong>600,000 SXP per month</strong> (agreement &sect;4). That monthly schedule — a timelock — protected the market and holders from a sudden flood of supply. By the later agreement's effective date, 13,200,000 SXP had been released and 18,000,000 remained.</p>
+        <p>The Core 5.0 terms would have <strong>cancelled that schedule and required all 18,000,000 SXP at once</strong> (cl. 5a). Abandoning a protection the community was relying on, in a single transfer, was something the Foundation was not willing to do. <span class="pos">FOUNDATION STATEMENT</span></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What were the conditions described as &ldquo;non-negotiable&rdquo;?</summary>
+      <div class="ans">
+        <p>In the Foundation's account, the recurring non-negotiables were: Binance's consent required for any upgrade or swap; the treasury wallet treated as Binance's property; SXP utility and fees — including card processing fees — removed or withheld; personal liability on top of corporate liability; and acceleration of the remaining token release. Together they left no room to operate or innovate independently. <span class="pos">FOUNDATION STATEMENT</span></p>
+      </div>
+    </details>
+
+    <!-- ===== SUPPLY & TREASURY ===== -->
+    <div class="grp">Supply &amp; treasury</div>
+
+    <details>
+      <summary>What is the &ldquo;duplicated&rdquo; or inflated supply?</summary>
+      <div class="ans">
+        <p><strong style="color:#f4f3f6;">The verifiable part (on-chain).</strong> SXP began as a single ERC-20 on Ethereum with a <strong>300,000,000</strong> hard cap. Today, near-full SXP supplies exist <em>in parallel</em> across chains: the Ethereum contract holds ~<strong>285.4M</strong> (<a href="https://etherscan.io/token/0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9" target="_blank" rel="noopener">Etherscan</a>); a separate <strong>&ldquo;Binance-Peg&rdquo; BEP-20</strong> on BNB Smart Chain holds ~<strong>289.7M</strong>, with its supply hard-coded and <em>no mint function</em>, deployed 5&nbsp;Oct&nbsp;2020 — after Binance's July 2020 acquisition (<a href="https://bscscan.com/token/0x47bead2563dcbf3bf2c9407fea4dc236faba485a" target="_blank" rel="noopener">BscScan</a>); and the native Solar mainnet now reports ~<strong>684M</strong> (<a href="https://api.solar.org/api/blockchain" target="_blank" rel="noopener">api.solar.org</a>). The 2023 migration was <strong>lock-based, not burn-based</strong> — the EVM tokens were locked, not destroyed, and native SXP was minted 1:1 on top. So roughly <strong>~575M SXP still exists on Ethereum + BSC</strong> alongside the ~684M native, even though the official line was that 480M would migrate 1:1 and &ldquo;supply would not be increased.&rdquo; Two near-full ~285–290M supplies, from a token that began as one 300M ERC-20, are the concrete basis for the &ldquo;duplicated supply&rdquo; concern. Every figure above is independently checkable on the explorers linked.</p>
+        <p><strong style="color:#f4f3f6;">The Foundation's position (not independently confirmed).</strong> That this parallel BSC supply was created and distributed <em>via Binance-operated infrastructure</em>, and that the treasury sat outside the Solar team — as set out in the <a href="https://blog.solar.org/solar-project-status-update/" target="_blank" rel="noopener">January 2026 Project Status Update</a>. Binance has not publicly responded, and no independent forensic analysis has tied the BSC supply to specific Binance-controlled addresses. We present the on-chain facts and our interpretation; readers can verify and form their own view. <span class="pos">FOUNDATION STATEMENT</span></p>
+        <p style="font-size:13.5px;color:#8b8a93;"><strong>One honest clarification:</strong> not all supply growth is &ldquo;duplication.&rdquo; Most of the 480M&rarr;684M increase is <em>ordinary, disclosed</em> Solar mainnet forging inflation (~39M SXP/year, no protocol cap) — routine block rewards, not minting from thin air. The duplication concern is specifically the <em>parallel EVM supply</em> described above.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Who controls the treasury?</summary>
+      <div class="ans">
+        <p>Under the published agreement, the relevant wallet and the SXP held within it are stated to <strong>belong to Binance</strong>, with the Solar Parties holding no legal or beneficial ownership (cl. 5d). In the Foundation's account, this is a treasury that was originally meant to be the project's, and whose transfer was a condition of the 2022 mainnet support. <a href="agreement.html">See the agreement →</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why couldn't the Solar Card launch?</summary>
+      <div class="ans">
+        <p>A ticker catch-22. Binance's position was that the SXP / &ldquo;Swipe&rdquo; intellectual property belonged to Binance, so the Foundation was <strong>not permitted to use SXP as the card ticker</strong> — but it was <strong>also not allowed to change the ticker</strong>. With neither option open, a compliant card product could not ship. <span class="pos">FOUNDATION STATEMENT</span></p>
+      </div>
+    </details>
+
+    <!-- ===== MIGRATION & MONOLYTHIUM ===== -->
+    <div class="grp">Migration &amp; Monolythium</div>
+
+    <details>
+      <summary>Why not just force everyone to migrate to a new chain?</summary>
+      <div class="ans">
+        <p>Because a forced migration would <strong>inherit Solar's legacy problems</strong> — everything tied to the Binance arrangements, including the disputed/duplicated supply. Importing those issues into a new network would simply move the problem, not solve it.</p>
+        <p>So instead of forcing anything, the Foundation proposed an <strong>optional, voluntary</strong> migration framework through governance — <a href="governance.html">SXP-GOV-2026-01</a>. It was non-binding and non-executing; it only sought permission to <em>design</em> such a framework for later review.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Was a move to Monolythium proposed — and what happened?</summary>
+      <div class="ans">
+        <p>Yes. A voluntary, opt-in migration path was put to a validator vote (<a href="governance.html">SXP-GOV-2026-01</a>, 27–30 Jan 2026). It was <strong>rejected on quorum</strong>: 28 validators voted YES, 0 NO, 1 abstained — 100% approval among votes cast — but only 54.7% of validator voting power participated, below the 67% quorum required. Nothing was forced and nothing proceeded.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is Monolythium the &ldquo;new SXP&rdquo;? Do holders get an airdrop?</summary>
+      <div class="ans">
+        <p><strong>No.</strong> Monolythium is a separate, independent project that <strong>inherits no Solar assets, governance, or obligations</strong>. SXP holders receive nothing automatically. Be wary of anyone claiming there is an airdrop or an official &ldquo;migration&rdquo; — none has been initiated, endorsed, or executed.</p>
+      </div>
+    </details>
+
+    <!-- ===== PRACTICAL ===== -->
+    <div class="grp">For holders &amp; the network</div>
+
+    <details>
+      <summary>Is the Solar network still running?</summary>
+      <div class="ans">
+        <p>Yes — in <strong>maintenance-only</strong> mode. Block production continues through independent validators, and the Foundation maintains seed infrastructure on a best-effort basis. There is no active development team and no further protocol updates are planned. <a href="status.html">Live status →</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is my SXP safe? Can I still move or withdraw it?</summary>
+      <div class="ans">
+        <p>Self-custodied SXP and the network continue to function; verify balances on <a href="https://solarscan.com" target="_blank" rel="noopener">Solarscan</a>. Exchange support has narrowed — Binance ended SXP spot trading on 1 April 2026 — so use the <a href="exchanges.html">remaining venues</a> and always confirm the deposit network is Solar mainnet. This is not financial advice.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why did Binance delist SXP?</summary>
+      <div class="ans">
+        <p>Binance announced the delisting on 18 March 2026, with spot trading ceasing on 1 April 2026, citing its standard periodic review criteria. South Korean exchanges had delisted earlier (March 2025). <a href="history.html">See the timeline →</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why was the founder personally named in the agreement?</summary>
+      <div class="ans">
+        <p>The agreement named an individual alongside the Foundation, with <strong>joint and several liability</strong> (cl. 5e) — i.e., personal exposure on top of the entity's. That personal-liability structure was one of the central reasons the agreement was not signed. <a href="agreement.html">See the agreement →</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why was the Foundation silent until now?</summary>
+      <div class="ans">
+        <p>The arrangements were bound by confidentiality — the agreement's own terms are confidential. The Foundation carried that silence to avoid harming the parties involved. The decision to publish this record was made in the interest of transparency, accepting the associated risk, after extended public criticism made silence untenable.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can someone else take over Solar?</summary>
+      <div class="ans">
+        <p>Yes. Solar is open-source and remains open for any credible organization, foundation, or contributor better positioned to steward it. No Solar assets, code, governance authority, or infrastructure have been transferred to anyone. If your team is interested, contact <a href="mailto:hello@solar.org">hello@solar.org</a>.</p>
+      </div>
+    </details>
+
+    <!-- disclaimer -->
+    <div style="border-top:1px solid #1c1b21;margin-top:36px;padding-top:22px;font-size:12.5px;line-height:1.7;color:#5f5e66;">
+      This page is an information record published by The Solar Foundation. It is not financial, investment, or legal advice. Statements established by the published agreement cite the relevant clause; other statements are the Foundation's account, presented for context and not independently adjudicated. Nothing here is an accusation of wrongdoing by any party.
+    </div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:18px;font-size:13px;color:#5f5e66;">
+      <span>&copy; The Solar Foundation</span>
+      <a href="index.html" data-h="color:#f4f3f6;" style="color:#a9a8b0;text-decoration:none;">&#8592; Home</a>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
