@@ -1,0 +1,12 @@
+{
+  "name": "solar-foundation-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solar Foundation website and public transparency records.",
+  "scripts": {
+    "start": "node solar-site-server.js"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
