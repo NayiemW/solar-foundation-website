@@ -4,7 +4,7 @@
 
 The public transparency website for Solar (SXP): its history, governance, published agreements, community report and supporting evidence.
 
-[Website](https://solar.org) · [GitHub Pages mirror](https://nayiemw.github.io/solar-foundation-website/) · [History](https://nayiemw.github.io/solar-foundation-website/history/) · [Evidence](https://nayiemw.github.io/solar-foundation-website/evidence/)
+[Website](https://solar.org) · [Railway deployment](https://solar-foundation-website-production.up.railway.app) · [GitHub Pages mirror](https://nayiemw.github.io/solar-foundation-website/) · [History](https://nayiemw.github.io/solar-foundation-website/history/) · [Evidence](https://nayiemw.github.io/solar-foundation-website/evidence/)
 
 ## Explore the record
 
@@ -37,6 +37,10 @@ python3 scripts/build-pages.py --base-path /solar-foundation-website --output _s
 GitHub Actions publishes `_site/` after a `dev` → `prod` pull request is merged. `prod` is the default and production branch; make all changes on `dev`.
 
 The Pages site is a mirror. Existing `solar.org` canonical URLs are preserved. See [deployment details](solar-site/DEPLOY.md).
+
+## Railway
+
+Railway deploys `prod` with Railpack and starts the existing Node static server with `npm start`. It serves `solar-site/` at the domain root and listens on Railway's assigned `PORT`. The homepage is the deployment health check. Runtime settings are versioned in `railway.json`.
 
 ## Repository
 

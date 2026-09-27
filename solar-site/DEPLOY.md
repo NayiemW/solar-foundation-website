@@ -1,8 +1,10 @@
-# GitHub Pages deployment
+# Website deployments
 
 **Repository:** [NayiemW/solar-foundation-website](https://github.com/NayiemW/solar-foundation-website)
 
 **Pages URL:** [nayiemw.github.io/solar-foundation-website/](https://nayiemw.github.io/solar-foundation-website/)
+
+**Railway URL:** [solar-foundation-website-production.up.railway.app](https://solar-foundation-website-production.up.railway.app)
 
 **Canonical website:** [solar.org](https://solar.org)
 
@@ -34,6 +36,10 @@ GitHub Pages uses **GitHub Actions** as its publishing source. Changes on `dev` 
 ## Canonical identity
 
 This deployment is a mirror of the Solar website. Existing canonical links, social metadata and sitemap references to `https://solar.org` are preserved. Publishing this mirror does not require changing the `solar.org` domain.
+
+## Railway
+
+The existing Railway service follows `prod`. Railpack uses `package.json` to install Node 22 and runs `npm start`, as declared in `railway.json`. The server binds to `0.0.0.0` and the injected `PORT`, serving the original `solar-site/` with clean routes such as `/history` and `/evidence`. A successful response from `/` passes the deployment health check. No database or build-time content regeneration is needed.
 
 ## Verify a deployment
 
