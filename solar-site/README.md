@@ -1,49 +1,39 @@
-# solar.org — Solar Foundation static site
+# Solar Foundation static site
 
-A self-contained, dependency-free static site (no build step, no React/Babel runtime).
-Plain HTML + one small `app.js`. Deploy anywhere that serves static files.
+The committed HTML, JavaScript, images and documents for the [Solar Foundation website](https://solar.org). This directory is also the input for the [GitHub Pages mirror](https://nayiemw.github.io/solar-foundation-website/).
 
-## View it
+## Preview
 
-**Option A — open directly (zero setup):**
-Open `index.html` in a browser. Internal links, the accordion, the archive filter,
-and the **live chain data** (fetched from `https://api.solar.org`) all work from `file://`.
+From the repository root:
 
-**Option B — local server (production-like):**
-```bash
-cd solar-site
-python3 -m http.server 8099
-# open http://localhost:8099
+```sh
+node solar-site-server.js
 ```
-Any static server works equally (nginx, Caddy, `npx serve`, Netlify, Cloudflare Pages, GitHub Pages).
 
-## Pages
-- `index.html` — homepage (hero + live console, stats, status, history accordion, exchanges, get-involved)
-- `history.html` — full sourced timeline (Verified / Reported / Foundation-account tags)
-- `governance.html` — SXP-GOV-2026-01 vote record + full proposal text
-- `status.html` — current status + live chain metrics
-- `exchanges.html` — where SXP trades + holder/exchange guidance + network parameters
-- `archive.html` — blog archive (search + tag filter); 5 critical posts are durable local snapshots
-- `archive/*.html` — local snapshots of the resignation, status update, governance posts, etc.
+Open [localhost:3100](http://localhost:3100). Use this server to resolve the source site's extensionless navigation routes correctly.
 
-## Live data
-`app.js` fetches the latest block + supply from `https://api.solar.org` every 30s and updates
-the height, "last block Xs ago", supply, and the **advancing / delayed / stalled** indicator
-based on the *real* last-block age. If the API is unreachable it shows "status unknown"
-(it never fabricates liveness).
+## Content
 
-## ⚠ Before going live — fill these in
-1. **Discord & Community/X URLs** — `index.html` has two `href="#"` placeholders in the
-   "Get involved" grid (cards labelled *Discord* and *Community / X*). Replace `#` with real URLs.
-2. **Confirm exchange links** still resolve and that each deposit network is **Solar mainnet**
-   (the page already warns users to verify). `exchanges.html`, "Last reviewed" date.
-3. Optionally point the homepage "community transparency report" button at a hosted copy of the report.
+| Page | Content |
+| --- | --- |
+| `index.html` | Project overview and network status. |
+| `history.html` | Sourced project timeline. |
+| `core5.html` | Core 5.0 upgrade record. |
+| `agreement.html` | Published Token Swap Agreement. |
+| `report.html` | Community report and downloadable document. |
+| `evidence.html` | Searchable index of 82 screenshot exhibits. |
+| `governance.html` | Governance proposal and vote record. |
+| `status.html` | Network status and browser-fetched metrics. |
+| `exchanges.html` | Exchange and network information. |
+| `faq.html` | Frequently asked questions. |
+| `archive.html` and `archive/` | Searchable archive and local statement snapshots. |
 
-## Notes on accuracy
-All facts were cross-checked against the research dossier (`../solar-transparency/SOLAR_HISTORY_RESEARCH.md`).
-Archive dates/slugs were corrected (e.g. Core 3.3.0 → 2022-05-30, Solar Card → 2023-02-12,
-BrighterVPN → 2024-10-18). The dead `github.com/NayiemW/solar-proposal` link was repointed to
-`proposals.solar.org`. Voice is institutional (Foundation), third-person; Binance-related grievances
-are labelled as the Foundation's account, not adjudicated fact.
+`app.js` provides navigation, accordions, archive filtering, evidence expansion and network metrics. It requests block and supply data from `https://api.solar.org` every 30 seconds on pages that display live data. If the API cannot be reached, the chain indicator shows **status unknown**.
 
-Source design (Claude design-canvas export) is preserved in `../solar-foundation-site/`.
+## Publishing
+
+GitHub Pages receives a packaged copy of this directory, with directory index routes and local URLs adapted to `/solar-foundation-website/`. Existing `solar.org` canonical metadata remains intact.
+
+Make changes on `dev`. Publishing happens only after a `dev` → `prod` pull request is merged. See [deployment instructions](DEPLOY.md) for the packaging command and verification steps.
+
+The historical scripts under `solar-build/` require original authoring inputs. They are not a prerequisite for deploying these committed files.
